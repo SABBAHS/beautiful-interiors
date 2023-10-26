@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Libre+Baskerville&family=Playfair+Display&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    color: #013328;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+header {
+    background-color: #eed9c4;
+    font-family: "Playfair Display", serif;
+    font-weight: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #013328;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 290%;
+    margin-left: 20px;
+}
+
+#logo {
+    float: left;
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+/*NAVIGATION BAR*/
+
+#menu {
+    font-size: 120%;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+#menu,
+#logo {
+    line-height: 70px;
+}
+
+nav {
+    order: 1;
+}
+
+li a {
+    float: right;
+    margin-right: auto;
+    list-style-type: none;
+    margin-right: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400px;
+    color: #013328;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0 10px;
+    align-items: center;
+}
+
+#menu a {
+    color: inherit;
+    list-style-type: none;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-size: 150%;
+}
+
+.active1 .active2 .active3 {
+    padding: 10px 20px 10px 20px;
+}
+
+/*MAIN CONTENT*/
+main {
+    background-color: #fcfcf6;
+}
+
+/*HERO IMAGE*/
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background-image: url("assets/images/white-cream-interior.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #eed9c4;
+    height: 160px;
+    position: absolute bottom;
+    overflow: hidden;
+}
+
+#social-networks {
+    text-align: center;
+}
+
+#social-networks>li {
+    display: inline;
+}
+
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
