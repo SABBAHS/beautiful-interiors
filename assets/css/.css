@@ -6,13 +6,61 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'EB Garamond', serif;
+    color: #013328;
+}
 /*HEADER*/
 header {
     background-color:#eed9c4;
     font-family: 'Playfair Display', serif;
-    font-weight: 400px;
+    font-weight: 700px;
+    
 }
 
+h2, h2 {
+    color: #013328;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 290%;
+}
+#logo {
+    float: left;
+
+    }
+/*NAVIGATION BAR*/
+
+#menu {
+font-size: 120%;
+letter-spacing: 3px;
+padding: 0 10px;
+}
+
+#menu, #logo {
+ line-height: 80px;
+
+}
+
+#menu li {
+    float:right;
+    list-style-type: none;
+    margin-right: 20px;
+}
+menu a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+#menu a:hover {
+    font-size: 100%;
+    border-bottom: 1px solid #013328;
+}
+.active {
+    font-size: 100%;
+    border-bottom: 1px solid #013328;
+}
 /*MAIN CONTENT*/
 main {
 background-color: #fff6ec;
