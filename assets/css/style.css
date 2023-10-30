@@ -1,181 +1,182 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Libre+Baskerville&family=Playfair+Display&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "EB Garamond", serif;
-    color: #013328;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "EB Garamond", serif;
+  color: #013328;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*HEADER*/
 header {
-    background-color: #eed9c4;
-    font-family: "Playfair Display", serif;
-    font-weight: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+  background-color: #eed9c4;
+  font-family: "Playfair Display", serif;
+  font-weight: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 
 h1 {
-    color: #013328;
-    font-family: "Playfair Display", serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 290%;
-    margin-left: 20px;
+  color: #013328;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 290%;
+  margin-left: 20px;
 }
 
 h2 {
-    color: #013328;
-    font-family: "Playfair Display", serif;
-
+  color: #013328;
+  font-family: "Playfair Display", serif;
 }
 
 #logo {
-    float: left;
-    margin-left: auto;
-    padding-left: 20px;
+  float: left;
+  margin-left: auto;
+  padding-left: 20px;
 }
 
 /*NAVIGATION BAR*/
 
 #menu {
-    font-size: 120%;
-    letter-spacing: 1px;
-    padding: 10px;
+  font-size: 120%;
+  letter-spacing: 1px;
+  padding: 10px;
 }
 
 #menu,
 #logo {
-    line-height: 70px;
+  line-height: 70px;
 }
 
 nav {
-    order: 1;
+  order: 1;
 }
 
 li a {
-    float: right;
-    margin-right: auto;
-    list-style-type: none;
-    margin-right: 10px;
-    font-family: "Playfair Display", serif;
-    font-weight: 400px;
-    color: #013328;
-    text-decoration: none;
-    list-style-type: none;
-    align-items: center;
-    padding: 5px 10%;
+  float: right;
+  margin-right: auto;
+  list-style-type: none;
+  margin-right: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400px;
+  color: #013328;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  padding: 5px 10%;
 }
 
 #menu li {
-    display: inline-block;
-    padding: 0 10px;
-    align-items: center;
+  display: inline-block;
+  padding: 0 10px;
+  align-items: center;
 }
 
 #menu a {
-    color: inherit;
-    list-style-type: none;
-    font-size: 150%;
-    text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  font-size: 150%;
+  text-decoration: none;
 }
 
 #menu a:hover {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 .active1 .active2 .active3 {
-    padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 /*MAIN CONTENT*/
 main {
-    background-color: #fcfcf6;
+  background-color: #fcfcf6;
 }
 
 /*HERO IMAGE*/
 
 #hero-image {
-    height: 600px;
-    width: 100%;
-    margin: auto;
-    background-image: url("assets/images/white-cream-interior.webp");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  height: 600px;
+  width: 100%;
+  margin: auto;
+  background-image: url("assets/images/white-cream-interior.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 /*SECTION TWO*/
 
 #design-steps {
-    color: #013328;
-    font-family: "EB Garamond", serif;
-    width: 50%;
-    padding: 50px;
-    padding-top: 30px;
-    float: left;
-    text-align: center;
+  color: #013328;
+  font-family: "EB Garamond", serif;
+  width: 50%;
+  padding: 50px;
+  padding-top: 30px;
+  float: left;
+  text-align: center;
+  position: center;
 }
 
 #design-steps > h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #design-steps div {
-    font-size: 200%;
+  font-size: 200%;
 }
 
-
-
 #design-1 {
-    background-image: url("assets/images/rustic-bathroom.jpeg");
-    float: left;
-    height: 600px;
-    width: 50%;
+  background-image: url("assets/images/rustic-bathroom.jpeg");
+  float: left;
+  height: 600px;
+  width: 50%;
 }
 
 /*FOOTER*/
 footer {
-    background-color: #eed9c4;
-    height: 160px;
-    position: absolute bottom;
-    overflow: hidden;
-    padding: 50px 15%;
+  background-color: #eed9c4;
+  height: 160px;
+  position: absolute bottom;
+  overflow: hidden;
+  padding: 50px 15%;
 }
 
 .social-networks {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
-.social-networks>li {
-    display: inline;
-
+.social-networks > li {
+  display: inline;
 }
 
 .social-networks i li {
+  font-size: 30px;
+  color: #013328;
+  margin-top: 50px;
+  padding: 5%;
+}
+
+/* DESKTOP VIEW - from 1200px and below*/
+
+@media screen and (max-width: 1200px) {
+  #menu #logo .social-networks {
     font-size: 30px;
-    color: #013328;
-    margin-top: 50px;
-    padding: 5%;
+  }
 }
 
+/* LAPTOP VIEW - from 1030px and below*/
 
+/* TABLET VIEW - from 760px and below*/
 
-/* VIEW ON SMALLER SCREENS - from 1100px and below - */
-
-@media screen and (max-width: 1100px) {
-    #menu #logo .social-networks {
-        font-size: 30px;
-    }
-}
+/* TABLET VIEW - from 480px and below*/
