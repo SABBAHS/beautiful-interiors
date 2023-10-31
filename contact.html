@@ -37,9 +37,80 @@
       </nav>
     </header>
 
-    <!--MAIN CONTENT-->
+    <!--CONTACT FORM-->
     <main>
-      <div></div>
+      <section id="backgroundform">
+        <div>
+          <form action="https://formdump.codeinstitute.net/" method="post">
+            <fieldset>
+              <legend>
+                <h2>Contact Us</h2>
+              </legend>
+              <div id="leftcontact"></div>
+              <input
+                type="text"
+                name="first-name"
+                class="first-name"
+                placeholder="First Name"
+              />
+              <input
+                type="number"
+                name="mobile-number"
+                class="mobile-number"
+                placeholder="Mobile Number"
+              />
+              <div id="rightcontact"></div>
+              <input
+                type="text"
+                name="surname"
+                class="surname"
+                placeholder="Surname"
+              />
+              <input type="email" class="email" placeholder="Email Address" />
+              <div id="centercontain"></div>
+              <select class="natureofenquiry" name="natureofenquiry">
+                <option value="" disabled selected hidden>
+                  Nature of your enquiry (please select)
+                </option>
+                <option value="interior-design">Interior Design Enquiry</option>
+                <option value="productsandsuppliers">
+                  Products and Suppliers
+                </option>
+                <option value="art">Art Consultation</option>
+                <option value="generalenquiry">General Enquiry</option>
+              </select>
+              <textarea
+                name="yourenquiry"
+                class="yourenquiry"
+                placeholder="Your Enquiry"
+                rows="10"
+                cols="90"
+              ></textarea>
+              <input type="submit" value="Send Enquiry" id="button1" />
+            </fieldset>
+          </form>
+        </div>
+<!--CONTACT DETAILS-->
+        <div>
+        <fieldset id="contactdetails">
+
+            <h3>Address<i class="fa-solid fa-location-dot"></i></h3>
+            <p>
+            <address>Covent Garden, St Martin's Lane, London, WC2N 4JS</address>
+            </p>
+            <br>
+            <h3>Call Us<i class="fa-solid fa-phone"></i></h3>
+            <p>
+                <number>+44 1632 960066</number>
+            </p>
+            <br>
+            <h3>Email Us<i class="fa-regular fa-envelope"></i></h3>
+            <p>
+                <Email>info@beautifulinteriors.com</Email>
+            </p>
+        </fieldset>
+        </div>
+      </section>
     </main>
 
     <!----FOOTER-->
