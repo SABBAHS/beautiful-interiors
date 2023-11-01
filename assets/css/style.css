@@ -10,8 +10,7 @@ body {
     font-family: "EB Garamond", serif;
     color: #013328;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
 
 /*HEADER*/
@@ -135,18 +134,17 @@ main {
 }
 
 
-}
 
 /*HOMEPAGE TEXT*/
 
 #design-message {
     color: #013328;
-    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.06);
     font-family: "EB Garamond", serif;
     width: 400px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 40%;
+    left: 30px;
 
 }
 
@@ -277,14 +275,33 @@ textarea::placeholder {
 
 /*SERVICES PAGE*/
 
-#design-1 {
-    float: right;
-    position: relative;
-    height: 600px;
-    width: 100%;
-    background-position: center;
+.section1,
+.section2,
+.section3 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between center;
+    flex-direction: row;
+
+
+}
+
+.design {
+    flex: 1;
+}
+
+img {
+    height: 600px;
+    width: 400px;
+    margin: 20px 20px;
+}
+
+.servicetext {
+    color: #013328;
+    font-family: "EB Garamond", serif;
+    font-size: 120%;
+    width: 1000px;
+    text-align: center;
+
 }
 
 /* DESKTOP VIEW - from 1200px and below*/
