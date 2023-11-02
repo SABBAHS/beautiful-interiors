@@ -139,24 +139,15 @@ main {
 
 #design-message {
     color: #013328;
-    background-color: rgba(0, 0, 0, 0.06);
     font-family: "EB Garamond", serif;
-    width: 400px;
-    position: absolute;
-    top: 40%;
-    left: 30px;
-
-}
-
-#design-message h2 {
-    font-size: xx-large;
-    text-align: center;
-}
-
-#design-message div {
+    width: 50%;
     font-size: 150%;
     text-align: center;
+    margin: 200px, 50px;
+    left: 50%;
 }
+
+
 
 /*FOOTER*/
 footer {
@@ -299,10 +290,12 @@ img {
     color: #013328;
     font-family: "EB Garamond", serif;
     font-size: 120%;
-    width: 1000px;
     text-align: center;
+    justify-content: center;
+    padding: 5%;
 
 }
+
 
 /* DESKTOP VIEW - from 1200px and below*/
 
