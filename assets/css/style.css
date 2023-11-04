@@ -280,7 +280,7 @@ textarea::placeholder {
     flex: 1;
 }
 
-img {
+.design img {
     height: 600px;
     width: 400px;
     margin: 20px 20px;
@@ -296,6 +296,16 @@ img {
 
 }
 
+/*PROJECTS*/
+.containimages {
+    display: flex;
+}
+
+.gallery img {
+    padding: 10px;
+    width: 400px;
+    height: 600px;
+}
 
 /* DESKTOP VIEW - from 1200px and below*/
 
