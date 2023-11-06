@@ -201,27 +201,44 @@ fieldset {
 }
 
 .first-name,
-.surname,
-.email,
-.mobile-number {
-    width: 50%;
+.email {
+    width: 42%;
     height: 25px;
-    margin: 20px;
+    margin: 10px 20px;
     color: #013328;
     background: transparent;
     border: 2px solid #013328;
+    display: block;
+    float: left;
+
+}
+
+.surname,
+.mobile-number {
+    width: 42%;
+    height: 25px;
+    margin: 10px 20px;
+    color: #013328;
+    background: transparent;
+    border: 2px solid #013328;
+    display: block;
+    float: right;
 }
 
 .natureofenquiry,
 .yourenquiry {
-    width: 90%;
+    width: 94%;
     height: 25px;
-    margin: 20px;
+    margin: 20px 20px;
     color: #013328;
     position: center;
     background: transparent;
     border: 2px solid #013328;
     font-family: "EB Garamond", serif;
+}
+
+.yourenquiry {
+    height: 90px;
 }
 
 input::placeholder {
@@ -235,13 +252,7 @@ textarea::placeholder {
     font-family: "EB Garamond", serif;
 }
 
-#left-contain {
-    float: left;
-}
 
-#right-contain {
-    float: right;
-}
 
 #button1 {
     border: 2px solid #013328;
