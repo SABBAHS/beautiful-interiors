@@ -103,20 +103,20 @@ main {
 
 /*HERO IMAGE*/
 
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
 #hero-image {
-    height: 900px;
+    height: 600px;
     width: 100%;
     margin: auto;
     background-image: url("../images/livingbeautyroom.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-
-#hero-zoom {
-    height: 900px;
-    width: 100%;
-    overflow: hidden;
     /*Zoom effect*/
     animation-name: hero-zoom;
     animation-duration: 5s;
@@ -139,11 +139,13 @@ main {
 #design-message {
     color: #013328;
     font-family: "EB Garamond", serif;
+    background-color: rgba(254, 255, 255, 0.8);
     width: 50%;
-    font-size: 150%;
+    font-size: 100%;
     text-align: center;
-    margin: 200px, 50px;
-    left: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
 }
 
 /*FOOTER*/
@@ -182,11 +184,12 @@ footer {
 
 fieldset {
     display: inline-block;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: 350px;
+    margin-top: 5%;
     width: 50%;
     margin: 0, auto;
     padding: 1em;
+    background-color: rgba(254, 255, 255, 0.6);
 }
 
 #backgroundform {
