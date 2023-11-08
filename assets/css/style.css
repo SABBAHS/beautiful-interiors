@@ -280,16 +280,27 @@ textarea::placeholder {
 
 /*SERVICES PAGE*/
 
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .section1,
 .section2,
 .section3 {
-    display: flex;
+    /*display: flex;
     justify-content: space-between center;
-    flex-direction: row;
+    flex-direction: row;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .design {
     flex: 1;
+    text-align: center;
+    padding: 20px;
 }
 
 .design img {
@@ -331,33 +342,51 @@ textarea::placeholder {
 /* LAPTOP VIEW - 1280 px*/
 
 @media screen and (max-width: 1200px) {
-    .design img {
-        height: 500px;
-        width: 300px;
+    .design {
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .servicetext {
-        font-size: 17px;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
 /* TABLET VIEW - 768 px*/
 @media screen and (max-width: 768px) {
-    .design img {
-        height: 300px;
-        width: 200px;
-        margin-top: 50px;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
+    .design {
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .servicetext {
-        font-size: 15px;
+        max-width: 100%;
+        height: auto;
     }
 
-}
+    .design:last-child {
+        display: none;
 
-/* MOBILE VIEW - 320 px/
+    }
 
-/*IPhone 15 Pro Max - 430 px*/
+
+    /*IPhone 15 Pro Max - 430 px*/
+
+    @media screen and (max-width: 430px) {
+        .design {
+            flex: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .servicetext {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .design:last-child {
+            display: none;
+        }
