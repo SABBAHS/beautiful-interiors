@@ -104,13 +104,13 @@ main {
 /*HERO IMAGE*/
 
 #hero-outer {
-    height: 600px;
+    height: 700px;
     width: 100%;
     overflow: hidden;
 }
 
 #hero-image {
-    height: 600px;
+    height: 700px;
     width: 100%;
     margin: auto;
     background-image: url("../images/livingbeautyroom.jpeg");
@@ -140,12 +140,12 @@ main {
     color: #013328;
     font-family: "EB Garamond", serif;
     background-color: rgba(254, 255, 255, 0.8);
-    width: 50%;
+    width: 35%;
     font-size: 100%;
     text-align: center;
     position: absolute;
-    bottom: 30px;
-    left: 10px;
+    top: 290px;
+    left: 15px;
 }
 
 /*FOOTER*/
@@ -184,7 +184,7 @@ footer {
 
 fieldset {
     display: inline-block;
-    margin-left: 350px;
+    margin-left: 400px;
     margin-top: 5%;
     width: 50%;
     margin: 0, auto;
