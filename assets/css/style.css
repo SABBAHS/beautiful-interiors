@@ -160,6 +160,9 @@ footer {
 .social-networks {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .social-networks>li {
@@ -283,7 +286,6 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between center;
     flex-direction: row;
-
 }
 
 .design {
@@ -299,7 +301,7 @@ textarea::placeholder {
 .servicetext {
     color: #013328;
     font-family: "EB Garamond", serif;
-    font-size: 120%;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     padding: 5%;
@@ -310,6 +312,9 @@ textarea::placeholder {
 .containimages {
     clear: both;
     column-count: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .gallery img {
@@ -321,16 +326,38 @@ textarea::placeholder {
 }
 
 
-/* DESKTOP VIEW - from 1200px and below*/
+/* DESKTOP VIEW - 1600 */
+
+/* LAPTOP VIEW - 1280 px*/
 
 @media screen and (max-width: 1200px) {
-    #menu #logo .social-networks {
-        font-size: 30px;
+    .design img {
+        height: 500px;
+        width: 300px;
+    }
+
+    .servicetext {
+        font-size: 17px;
     }
 }
 
-/* LAPTOP VIEW - from 1030px and below*/
+/* TABLET VIEW - 768 px*/
+@media screen and (max-width: 768px) {
+    .design img {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
 
-/* TABLET VIEW - from 760px and below*/
+    .servicetext {
+        font-size: 15px;
+    }
 
-/* TABLET VIEW - from 480px and below*/
+}
+
+/* MOBILE VIEW - 320 px/
+
+/*IPhone 15 Pro Max - 430 px*/
