@@ -299,14 +299,13 @@ textarea::placeholder {
 
 .design {
     flex: 1;
-    text-align: center;
-    padding: 20px;
+
 }
 
 .design img {
+    padding: 10px;
     height: 600px;
     width: 400px;
-    margin: 20px 20px;
 }
 
 .servicetext {
@@ -337,56 +336,89 @@ textarea::placeholder {
 }
 
 
-/* DESKTOP VIEW - 1600 */
-
 /* LAPTOP VIEW - 1280 px*/
 
-@media screen and (max-width: 1200px) {
-    .design {
+@media only screen and (max-width: 1200px) and (min-width:1050px) {
+    .section1 .section2 .section3 {
         flex-direction: column;
-        max-width: 100%;
-        max-height: 100%;
+    }
+
+    .design img {
+        flex-direction: column;
+        height: 550px;
+        width: 350px;
     }
 
     .servicetext {
-        max-width: 100%;
-        max-height: 100%;
+        font-size: 19px
+    }
+}
+
+/* SCREEN REDUCED - 1050 - 768 px*/
+@media only screen and (max-width: 1050px) and (min-width: 768px) {
+    .section1 .section2 .section3 {
+        flex-direction: column;
+    }
+
+    .design img {
+        height: 350px;
+        width: 250px;
+        margin-top: 100px;
+    }
+
+    .servicetext {
+        font-size: 16px
     }
 }
 
 /* TABLET VIEW - 768 px*/
-@media screen and (max-width: 768px) {
-    .design {
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+    .section1 .section2 .section3 {
         flex-direction: column;
-        max-width: 100%;
-        max-height: 100%;
+    }
+
+    .design img {
+        height: 350px;
+        width: 250px;
+        margin-top: 100px;
     }
 
     .servicetext {
-        max-width: 100%;
-        height: auto;
+        font-size: 16px
     }
 
     .design:last-child {
         display: none;
+    }
+}
 
+/*MOBILE- 320 px*/
+
+@media only screen and (max-width: 320px) {
+
+    .section1,
+    .section2,
+    .section3 {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
 
+    .design img {
+        flex: none;
+        height: 350px;
+        width: 250px;
+    }
 
-    /*IPhone 15 Pro Max - 430 px*/
+    .servicetext {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
 
-    @media screen and (max-width: 430px) {
-        .design {
-            flex: none;
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .servicetext {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .design:last-child {
-            display: none;
-        }
+    .design:last-child {
+        display: none;
+    }
+}
