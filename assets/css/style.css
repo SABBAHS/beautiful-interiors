@@ -88,12 +88,20 @@ li a {
     text-decoration: none;
 }
 
-#menu a:hover {
-    font-size: 150%;
+#menu a:hover,
+#menu a:focus {
+    font-size: xx-large;
 }
+
 
 .active1 .active2 .active3 {
     padding: 10px 20px 10px 20px;
+}
+
+.container-nav {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /*MAIN CONTENT*/
