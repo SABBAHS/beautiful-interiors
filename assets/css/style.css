@@ -195,7 +195,7 @@ footer {
 
 fieldset {
     display: inline-block;
-    margin-left: 400px;
+    margin-left: 25%;
     margin-top: 5%;
     width: 50%;
     margin: 0, auto;
@@ -276,9 +276,12 @@ textarea::placeholder {
     font-family: "EB Garamond", serif;
 }
 
-.button1:hover {
+.button1:hover,
+.button1:focus,
+.button1:active {
     background-color: #eed9c4;
     color: #013328;
+    transition: 0.7s;
 }
 
 #contactdetails {
@@ -360,6 +363,10 @@ textarea::placeholder {
     .servicetext {
         font-size: 19px
     }
+
+    .container-nav {
+        flex-direction: column;
+    }
 }
 
 /* SCREEN REDUCED - 1050 - 768 px*/
@@ -377,11 +384,18 @@ textarea::placeholder {
     .servicetext {
         font-size: 16px
     }
+
+    header {
+        flex-direction: column;
+    }
 }
 
 /* TABLET VIEW - 768 px*/
-@media only screen and (max-width: 768px) and (min-width: 320px) {
-    .section1 .section2 .section3 {
+@media only screen and (max-width: 768px) and (min-width: 390px) {
+
+    .section1,
+    .section2,
+    .section3 {
         flex-direction: column;
     }
 
@@ -398,11 +412,32 @@ textarea::placeholder {
     .design:last-child {
         display: none;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    fieldset {
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .first-name,
+    .email,
+    .surname,
+    .mobile-number {
+        width: 40%;
+        display: block;
+        float: none;
+        justify-content: center;
+        margin: 20px;
+    }
 }
 
 /*MOBILE- 320 px*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 390px) and (min-width: 200px) {
 
     .section1,
     .section2,
@@ -428,5 +463,32 @@ textarea::placeholder {
 
     .design:last-child {
         display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    fieldset {
+        margin-left: 5%;
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    .first-name,
+    .email,
+    .surname,
+    .mobile-number {
+        width: 50%;
+        display: block;
+        float: none;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .natureofenquiry,
+    .yourenquiry {
+        width: 85%;
+        margin: 20px;
     }
 }
