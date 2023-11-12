@@ -274,6 +274,8 @@ textarea::placeholder {
     color: #eed9c4;
     margin: 20px;
     font-family: "EB Garamond", serif;
+    width: 100px;
+    border-radius: 10px;
 }
 
 #button1:hover,
