@@ -152,7 +152,7 @@ main {
     font-size: 100%;
     text-align: center;
     position: absolute;
-    top: 290px;
+    top: 40%;
     left: 15px;
 }
 
@@ -388,6 +388,10 @@ textarea::placeholder {
     header {
         flex-direction: column;
     }
+
+    #design-message {
+        top: 60%;
+    }
 }
 
 /* TABLET VIEW - 768 px*/
@@ -432,6 +436,11 @@ textarea::placeholder {
         float: none;
         justify-content: center;
         margin: 20px;
+    }
+    #design-message {
+    top: 40%;
+    width: 90%;
+    margin: 10px 20px;
     }
 }
 
@@ -490,5 +499,12 @@ textarea::placeholder {
     .yourenquiry {
         width: 85%;
         margin: 20px;
+    }
+
+    #design-message {
+    top: 75%;
+    width: 90%;
+    margin: 5px 5px;
+    font-size: small;
     }
 }
