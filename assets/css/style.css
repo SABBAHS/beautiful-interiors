@@ -276,9 +276,9 @@ textarea::placeholder {
     font-family: "EB Garamond", serif;
 }
 
-.button1:hover,
-.button1:focus,
-.button1:active {
+#button1:hover,
+#button1:focus,
+#button1:active {
     background-color: #eed9c4;
     color: #013328;
     transition: 0.7s;
