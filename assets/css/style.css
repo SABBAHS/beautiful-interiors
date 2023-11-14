@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+
 }
 
 h1 {
@@ -45,63 +46,81 @@ h2 {
 }
 
 /*NAVIGATION BAR*/
+.hamburger img, .close img {
+    display: none;
+}
 
-#menu {
+.menu {
     font-size: 120%;
     letter-spacing: 1px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
 
-#menu,
+.menu,
 #logo {
     line-height: 70px;
 }
 
-nav {
-    order: 1;
+.nav {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    list-style-type: none;
 }
 
 li a {
     float: right;
-    margin-right: auto;
+    margin-right: 20px;
     list-style-type: none;
-    margin-right: 10px;
     font-family: "Playfair Display", serif;
     font-weight: 400px;
     color: #013328;
     text-decoration: none;
-    list-style-type: none;
     align-items: center;
     padding: 5px 10%;
 }
 
-#menu li {
+ li {
     display: inline-block;
     padding: 0 10px;
     align-items: center;
 }
 
-#menu a {
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+li a {
     color: inherit;
     list-style-type: none;
     font-size: 150%;
-    text-decoration: none;
 }
 
-#menu a:hover,
-#menu a:focus {
-    font-size: xx-large;
+li a:hover,
+li a:focus {
+    font-size: x-large;
 }
-
 
 .active1 .active2 .active3 {
     padding: 10px 20px 10px 20px;
 }
 
-.container-nav {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
 }
 
 /*MAIN CONTENT*/
@@ -266,8 +285,6 @@ textarea::placeholder {
     font-family: "EB Garamond", serif;
 }
 
-
-
 #button1 {
     border: 2px solid #013328;
     background-color: #013328;
@@ -312,7 +329,6 @@ textarea::placeholder {
 
 .design {
     flex: 1;
-
 }
 
 .design img {
@@ -328,7 +344,6 @@ textarea::placeholder {
     text-align: center;
     justify-content: center;
     padding: 5%;
-
 }
 
 /*PROJECTS*/
@@ -397,7 +412,7 @@ textarea::placeholder {
 }
 
 /* TABLET VIEW - 768 px*/
-@media only screen and (max-width: 768px) and (min-width: 390px) {
+@media only screen and (max-width: 768px) and (min-width: 430px) {
 
     .section1,
     .section2,
@@ -439,11 +454,107 @@ textarea::placeholder {
         justify-content: center;
         margin: 20px;
     }
+
     #design-message {
-    top: 40%;
-    width: 90%;
-    margin: 10px 20px;
+        top: 40%;
+        width: 90%;
+        margin: 10px 20px;
     }
+
+}
+
+/*IPHONE 15 PRO MAX*/
+@media only screen and (max-width: 430px) and (min-width: 390px) {
+    #design-message {
+        top: 55%;
+        width: 80%;
+        margin: 10px 30px;
+        font-size: small;
+    }
+
+    header {
+        padding: 5%;
+    }
+
+    .logo {
+        float: left;
+        margin: 5%;
+    }
+
+    #design-message {
+        top: 30%;
+    }
+
+    /*NAVBAR*/
+    .hamburger, .close {
+        border: none;
+        cursor: pointer;
+        /* position absolute position the icons relative to the body because they have no position relative parents*/
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+      }
+      
+      .hamburger {
+        background: white;
+      }
+      
+      .close {
+        background: #013328;
+      }
+      
+      .hamburger img, .close img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .navbar {
+        position: absolute;
+        /* a higher z-index put navbar above hamburger */
+        z-index: 1000;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        /* basic menu styling*/
+        list-style: none;
+        background: #013328;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        /* animate slide up/down */
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+      }
+      
+      /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
+      
+      .navbar:target {
+        /* show navbar */
+        transform: translateY(0);
+      }
+      
+      li a {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        font-weight: bold;
+        font-size: 1.2rem;
+        /* remove default underline and add our own with padding and border bottom */
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.5rem;
+      }
+      
+      li a:hover, li a:focus {
+        /* show border bottom */
+        border-bottom: 1px solid white;
+      }
 }
 
 /*MOBILE- 320 px*/
@@ -504,9 +615,10 @@ textarea::placeholder {
     }
 
     #design-message {
-    top: 75%;
-    width: 90%;
-    margin: 5px 5px;
-    font-size: small;
+        top: 75%;
+        width: 90%;
+        margin: 5px 5px;
+        font-size: small;
     }
 }
+

@@ -21,18 +21,35 @@
     <title>Beautiful Interiors</title>
   </head>
   <body>
+
+    <!--SCRIPT TO GET TOGGLE MENU BUTTON TO OPEN WHEN CLICKED-->
+    <script>
+  document.getElementById("mobile-nav").addEventListener("click", toggleNav);
+
+  function toggleNav() {
+    var nav = document.getElementById("nav-bar");
+    nav.classList.toggle("nav-hidden");
+  }
+    </script>
     <!----HEADER---->
 
     <header>
-      <a href="index.html"> <h1 id="logo">BEAUTIFUL INTERIORS</h1></a>
+      <a href="index.html"><h1 id="logo">BEAUTIFUL INTERIORS</h1></a>
 
-      <nav>
-        <ul id="menu">
-          <li><a href="projects.html" class="active1">Projects</a></li>
-          <li><a href="services.html" class="active2">Services</a></li>
-          <li><a href="contact.html" class="active3">Contact</a></li>
-        </ul>
-      </nav>
+
+      <nav class ="nav">
+      <ul class="navbar" class ="menu" id="navbar" >
+        <li><a href="projects.html" class="active1">Projects</a></li>
+        <li><a href="services.html" class="active2">Services</a></li>
+        <li><a href="contact.html" class="active3">Contact</a></li>
+        <a class="close" href="#">
+          <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+        </a>
+      </ul>
+      <a class="hamburger" href="#navbar">
+          <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+      </a>
+    </nav>
     </header>
 
     <!----MAIN IMAGE-->
