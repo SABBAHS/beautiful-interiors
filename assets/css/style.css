@@ -350,6 +350,7 @@ textarea::placeholder {
 .containimages {
     margin: 20px;
     clear: both;
+    gap: 20px;
     column-count: 3;
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +359,6 @@ textarea::placeholder {
 
 .gallery {
     position: relative;
-    /*margin: 10px 30px;*/
     width: 400px;
     height: 600px;
     border: solid #013328 1px;
@@ -590,9 +590,9 @@ textarea::placeholder {
     }
 
     header {
-        padding: 5%;
+        padding: 20%;
     }
-
+  
     .logo {
         float: left;
         margin: 5%;
@@ -606,12 +606,12 @@ textarea::placeholder {
     .hamburger, .close {
         border: none;
         cursor: pointer;
-        /* position absolute position the icons relative to the body because they have no position relative parents*/
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 20px;
         width: 36px;
         height: 36px;
+    
       }
       
       .hamburger {
@@ -682,13 +682,13 @@ textarea::placeholder {
       }
 }
 
-/*MOBILE- 320 px*/
+/*MOBILE- 3920 px*/
 
 @media only screen and (max-width: 390px) and (min-width: 200px) {
 
     .section1,
     .section2,
-    .section3 {
+   .section3 {
         flex-direction: column;
         display: flex;
         justify-content: space-between;
@@ -714,7 +714,19 @@ textarea::placeholder {
 
     header {
         flex-direction: column;
+        padding: 50px;
     }
+
+    #logo h1 {
+
+        line-height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 10px;
+
+    }
+
     
 
     /*CONTACT*/
@@ -762,7 +774,7 @@ textarea::placeholder {
             cursor: pointer;
             /* position absolute position the icons relative to the body because they have no position relative parents*/
             position: absolute;
-            top: 20px;
+            top: 40px;
             right: 20px;
             width: 36px;
             height: 36px;
