@@ -48,6 +48,7 @@ h2 {
 /*NAVIGATION BAR*/
 .hamburger img, .close img {
     display: none;
+    color: #013328;
 }
 
 .menu {
@@ -498,7 +499,7 @@ textarea::placeholder {
       }
       
       .hamburger {
-        background: white;
+        color: #013328
       }
       
       .close {
@@ -539,19 +540,18 @@ textarea::placeholder {
         transform: translateY(0);
       }
       
-      li a {
+      .active1, .active2, .active3 {
         display: block;
-        font-family: 'Open Sans', sans-serif;
-        color: black;
+        font-family: "EB Garamond", serif;
+        color: #eed9c4;
         font-weight: bold;
         font-size: 1.2rem;
         /* remove default underline and add our own with padding and border bottom */
         text-decoration: none;
-        border-bottom: 1px solid black;
         padding-bottom: 0.5rem;
       }
       
-      li a:hover, li a:focus {
+      .navbar a:hover, .navbar a:focus {
         /* show border bottom */
         border-bottom: 1px solid white;
       }
