@@ -45,9 +45,23 @@ h2 {
     padding-left: 20px;
 }
 
+#slogan {
+position: absolute;
+bottom: 2%;
+left: 5%;
+font-size: 30px;
+color: whitesmoke;
+padding: 20px;
+background-color: rgba(0, 40, 2, .40);
+}
+
 /*NAVIGATION BAR*/
 .hamburger img, .close img {
     display: none;
+}
+
+.hamburger img {
+    color: #013328;
 }
 
 .menu {
@@ -166,13 +180,14 @@ main {
 #design-message {
     color: #013328;
     font-family: "EB Garamond", serif;
-    background-color: rgba(254, 255, 255, 0.8);
-    width: 35%;
+    text-align: center;
+    width: 80%;
     font-size: 100%;
     text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 15px;
+    position: relative;
+    left: 10%;
+    padding: 40px;
+
 }
 
 /*FOOTER*/
@@ -304,7 +319,7 @@ textarea::placeholder {
 }
 
 #contactdetails {
-    text-align: left;
+    text-align: center;
     background-color: rgba(254, 255, 255, 0.6);
 }
 
@@ -402,7 +417,7 @@ textarea::placeholder {
     text-align: center;
   }
 
-/* LAPTOP VIEW - 1280 px*/
+/* LAPTOP VIEW - 1200 px*/
 
 @media only screen and (max-width: 1200px) and (min-width:1050px) {
     .section1 .section2 .section3 {
@@ -444,8 +459,43 @@ textarea::placeholder {
         flex-direction: column;
     }
 
+    #slogan {
+    bottom: 750px;
+    left: 20px;
+    }
+
     #design-message {
         top: 60%;
+    }
+    fieldset {
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .first-name,
+    .email {
+        width: 42%;
+        height: 25px;
+        margin: 10px 20px;
+        color: #013328;
+        background: transparent;
+        border: 2px solid #013328;
+        display: block;
+        float: left;
+    
+    }
+    
+    .surname,
+    .mobile-number {
+        width: 42%;
+        height: 25px;
+        margin: 10px 20px;
+        color: #013328;
+        background: transparent;
+        border: 2px solid #013328;
+        display: block;
+        float: right;
     }
 }
 
@@ -499,12 +549,6 @@ textarea::placeholder {
         margin: 20px;
     }
 
-    #design-message {
-        top: 40%;
-        width: 90%;
-        margin: 10px 20px;
-    }
-
         /*NAVBAR*/
         .hamburger, .close {
             border: none;
@@ -532,6 +576,7 @@ textarea::placeholder {
             height: 100%;
             position: relative;
             top: 130%;
+            right: 20px;
           }
           
           .navbar {
@@ -578,16 +623,20 @@ textarea::placeholder {
             border-bottom: 1px solid white;
           }
 
+          #slogan {
+          font-size: 20px;
+          bottom: 190px;
+          left: 10px;
+          }
+
+          #design-message {
+           top: 40%;
+           padding: 40px 40px;
+          }
 }
 
 /*IPHONE 15 PRO MAX*/
 @media only screen and (max-width: 430px) and (min-width: 390px) {
-    #design-message {
-        top: 55%;
-        width: 80%;
-        margin: 10px 30px;
-        font-size: small;
-    }
 
     header {
         padding: 20%;
@@ -599,7 +648,16 @@ textarea::placeholder {
     }
 
     #design-message {
-        top: 30%;
+    width: 80%;
+    font-size: small;
+    }
+
+    #slogan {
+    position: absolute;
+    bottom: 120px;
+    margin-right: 5%;
+    font-size: large;
+    padding: 10px;
     }
 
     /*NAVBAR*/
@@ -607,7 +665,7 @@ textarea::placeholder {
         border: none;
         cursor: pointer;
         position: absolute;
-        top: 30px;
+        top: 70px;
         right: 20px;
         width: 36px;
         height: 36px;
@@ -615,12 +673,12 @@ textarea::placeholder {
       }
       
       .hamburger {
-        color: #013328 !important;
+        color: #013328;
       }
       
       .close {
         background: #013328;
-        color: #eed9c4 !important;
+        color: #eed9c4;
       }
       
       .hamburger img, .close img {
@@ -680,14 +738,28 @@ textarea::placeholder {
       .first-name, .email, .natureofenquiry, .yourenquiry {
         width: 90%;
       }
+
+      .email {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .natureofenquiry {
+        margin: 0 20px;
+        margin-bottom: 20px;
+      }
+      .yourenquiry {
+        margin-top: 0;
+      }
+
 }
 
-/*MOBILE- 3920 px*/
+/*MOBILE- 390 px*/
 
 @media only screen and (max-width: 390px) and (min-width: 200px) {
 
-    .section1,
-    .section2,
+   .section1,
+   .section2,
    .section3 {
         flex-direction: column;
         display: flex;
@@ -713,22 +785,15 @@ textarea::placeholder {
     }
 
     header {
-        flex-direction: column;
-        padding: 50px;
+        padding: 70px;
     }
 
-    #logo h1 {
-
-        line-height: 50px;
+    #logo {
         position: absolute;
-        top: 20px;
-        left: 20px;
-        margin: 10px;
-
+        left: 10px;
+        top: 50px;
     }
-
     
-
     /*CONTACT*/
     fieldset {
         margin-left: 5%;
@@ -747,21 +812,25 @@ textarea::placeholder {
         margin: 20px;
     }
 
-    .natureofenquiry,
-    .yourenquiry {
-        width: 85%;
-        margin: 20px;
-    }
+    .email {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .natureofenquiry {
+        margin: 0 20px;
+        margin-bottom: 20px;
+      }
+      .yourenquiry {
+        margin-top: 0;
+      }
 
     #design-message {
-        top: 75%;
-        width: 90%;
-        margin: 5px 5px;
         font-size: small;
     }
 
-          /*Mobile contact form*/
-          .mobile-number, .surname {
+  /*Mobile contact form*/
+ .mobile-number, .surname {
             display: none;
           }
           .first-name, .email, .natureofenquiry, .yourenquiry {
@@ -772,21 +841,20 @@ textarea::placeholder {
         .hamburger, .close {
             border: none;
             cursor: pointer;
-            /* position absolute position the icons relative to the body because they have no position relative parents*/
             position: absolute;
-            top: 40px;
+            top: 65px;
             right: 20px;
             width: 36px;
             height: 36px;
           }
           
           .hamburger {
-            color: #013328 !important;
+            color: #013328;
           }
           
           .close {
             background: #013328;
-            color: #eed9c4 !important;
+            color: #eed9c4;
           }
           
           .hamburger img, .close img {
@@ -839,4 +907,6 @@ textarea::placeholder {
             /* show border bottom */
             border-bottom: 1px solid white;
           }
+
+          
         }
