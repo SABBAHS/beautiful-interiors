@@ -213,6 +213,11 @@ footer {
     margin-top: 50px;
     padding: 5%;
 }
+.copyright {
+font-size: 12px;
+position: absolute;
+right: 20px;
+}
 
 /*CONTACT PAGE*/
 
