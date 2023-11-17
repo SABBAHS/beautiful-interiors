@@ -22,7 +22,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-
 }
 
 h1 {
@@ -47,7 +46,7 @@ h2 {
 
 #slogan {
 position: absolute;
-bottom: 2%;
+bottom: 300px;
 left: 5%;
 font-size: 30px;
 color: whitesmoke;
@@ -56,13 +55,10 @@ background-color: rgba(0, 40, 2, .40);
 }
 
 /*NAVIGATION BAR*/
-.hamburger img, .close img {
+.hamburger, .xmark  {
     display: none;
 }
 
-.hamburger img {
-    color: #013328;
-}
 
 .menu {
     font-size: 120%;
@@ -218,7 +214,7 @@ footer {
     padding: 5%;
 }
 
-/*CONTACT US*/
+/*CONTACT PAGE*/
 
 #legend fieldset {
     font-size: xx-large;
@@ -429,7 +425,11 @@ textarea::placeholder {
         height: 550px;
         width: 350px;
     }
-
+    #slogan {
+        position: absolute;
+        bottom: 40px;
+        left: 5%;
+    }
     .servicetext {
         font-size: 19px
     }
@@ -460,8 +460,9 @@ textarea::placeholder {
     }
 
     #slogan {
-    bottom: 750px;
-    left: 20px;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
     }
 
     #design-message {
@@ -550,33 +551,28 @@ textarea::placeholder {
     }
 
         /*NAVBAR*/
-        .hamburger, .close {
+        .hamburger {
+            display: flex;
             border: none;
-            cursor: pointer;
-            /* position absolute position the icons relative to the body because they have no position relative parents*/
             position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 36px;
-            height: 36px;
+            top: 70px;
+            left: 650px;
+            font-size: 30px;
+            color: #013328;  
+            text-decoration: none; 
           }
-          
-          .hamburger {
-            color: #013328;
-          }
-          
-          .close {
+                
+          .xmark {
+            display: flex;
+            border: none;
+            position: absolute;
+            top: 70px;
+            left: 300px;
+            font-size: 30px;
             background: #013328;
             color: #eed9c4;
-          }
-          
-          .hamburger img, .close img {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            top: 130%;
-            right: 20px;
+            text-decoration: none;
+
           }
           
           .navbar {
@@ -600,8 +596,6 @@ textarea::placeholder {
             transition: transform 0.2s ease;
           }
           
-          /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
-          
           .navbar:target {
             /* show navbar */
             transform: translateY(0);
@@ -613,13 +607,11 @@ textarea::placeholder {
             color: #eed9c4;
             font-weight: bold;
             font-size: 1.2rem;
-            /* remove default underline and add our own with padding and border bottom */
             text-decoration: none;
             padding-bottom: 0.5rem;
           }
           
           .navbar a:hover, .navbar a:focus {
-            /* show border bottom */
             border-bottom: 1px solid white;
           }
 
@@ -640,6 +632,7 @@ textarea::placeholder {
 
     header {
         padding: 20%;
+        flex-direction: row;
     }
   
     .logo {
@@ -660,31 +653,29 @@ textarea::placeholder {
     padding: 10px;
     }
 
-    /*NAVBAR*/
-    .hamburger, .close {
+    /*NAVBAR*/  
+    .hamburger {
+        display: flex;
         border: none;
-        cursor: pointer;
         position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 36px;
-        height: 36px;
-    
+        top: 60px;
+        left: 350px;
+        font-size: 30px;
+        color: #013328;  
+        text-decoration: none; 
       }
-      
-      .hamburger {
-        color: #013328;
-      }
-      
-      .close {
+            
+      .xmark {
+      display: flex;
+      border: none;
+        position: absolute;
+        top: 60px;
+        left: 150px;
+        font-size: 30px;
         background: #013328;
         color: #eed9c4;
-      }
-      
-      .hamburger img, .close img {
-        display: flex;
-        width: 100%;
-        height: 100%;
+        text-decoration: none;
+
       }
       
       .navbar {
@@ -708,8 +699,6 @@ textarea::placeholder {
         transition: transform 0.2s ease;
       }
       
-      /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
-      
       .navbar:target {
         /* show navbar */
         transform: translateY(0);
@@ -721,13 +710,11 @@ textarea::placeholder {
         color: #eed9c4;
         font-weight: bold;
         font-size: 1.2rem;
-        /* remove default underline and add our own with padding and border bottom */
         text-decoration: none;
         padding-bottom: 0.5rem;
       }
       
       .navbar a:hover, .navbar a:focus {
-        /* show border bottom */
         border-bottom: 1px solid white;
       }
 
@@ -756,8 +743,9 @@ textarea::placeholder {
 
 /*MOBILE- 390 px*/
 
-@media only screen and (max-width: 390px) and (min-width: 200px) {
+@media only screen and (max-width: 390px) {
 
+/*Services page*/
    .section1,
    .section2,
    .section3 {
@@ -783,6 +771,7 @@ textarea::placeholder {
     .design:last-child {
         display: none;
     }
+/*homepage*/
 
     header {
         padding: 70px;
@@ -791,10 +780,12 @@ textarea::placeholder {
     #logo {
         position: absolute;
         left: 10px;
-        top: 50px;
+        top: 55px;
+        font-size: 35px;
+        line-height: 40px;
     }
-    
-    /*CONTACT*/
+
+    /*contact*/
     fieldset {
         margin-left: 5%;
         margin-top: 10%;
@@ -837,31 +828,22 @@ textarea::placeholder {
             width: 90%;
           }
     
-        /*NAVBAR*/
-        .hamburger, .close {
-            border: none;
-            cursor: pointer;
-            position: absolute;
-            top: 65px;
-            right: 20px;
-            width: 36px;
-            height: 36px;
-          }
-          
+        /*navbar*/
+
           .hamburger {
+            position: absolute;
+            top: 60px;
+            left: 320px;
+            padding: 10px;
             color: #013328;
           }
           
-          .close {
+          .xmark {
+            position: absolute;
+            top: 60px;
+            left: 140px;
             background: #013328;
             color: #eed9c4;
-          }
-          
-          .hamburger img, .close img {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            display: flex;
           }
           
           .navbar {
@@ -885,7 +867,6 @@ textarea::placeholder {
             transition: transform 0.2s ease;
           }
           
-          /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
           
           .navbar:target {
             /* show navbar */
@@ -898,15 +879,72 @@ textarea::placeholder {
             color: #eed9c4;
             font-weight: bold;
             font-size: 1.2rem;
-            /* remove default underline and add our own with padding and border bottom */
             text-decoration: none;
             padding-bottom: 0.5rem;
           }
           
           .navbar a:hover, .navbar a:focus {
-            /* show border bottom */
             border-bottom: 1px solid white;
           }
 
-          
+/*MOBILE- 320 px*/
+
+@media only screen and (max-width: 320px) and (min-width: 200px) {
+
+    /*Projects page*/
+    .gallery {
+    width: 250px;
+    height: 400px;
+    }
+     
+   /*footer*/
+
+.social-networks {
+font-size: medium;
+left: 10px;      
         }
+/*Header*/
+
+#logo {
+    position: absolute;
+    padding: 10px;
+    line-height: 40px;
+    font-size: 35px;
+}
+
+#slogan {
+right: 5%;
+font-size: 20px;
+}
+.hamburger {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    font-size: 25px;
+    padding: 10px;
+    color: #013328;
+    text-decoration: none;
+  }
+  
+  .xmark {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    font-size: 25px;
+    background: #013328;
+    color: #eed9c4;
+    text-decoration: none;
+  }
+
+.design-message {
+padding:10px;
+}
+#second-p {
+    display: none;
+}
+
+        }
+
+    }
