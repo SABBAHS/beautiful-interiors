@@ -17,7 +17,6 @@ body {
 header {
     background-color: #eed9c4;
     font-family: "Playfair Display", serif;
-    font-weight: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +88,6 @@ li a {
     margin-right: 20px;
     list-style-type: none;
     font-family: "Playfair Display", serif;
-    font-weight: 400px;
     color: #013328;
     text-decoration: none;
     align-items: center;
@@ -190,7 +188,6 @@ main {
 footer {
     background-color: #eed9c4;
     height: 160px;
-    position: absolute bottom;
     overflow: hidden;
     padding: 50px 15%;
 }
@@ -230,10 +227,8 @@ right: 20px;
 
 fieldset {
     display: inline-block;
-    margin-left: 25%;
-    margin-top: 5%;
     width: 50%;
-    margin: 0, auto;
+    margin: 5% 25%;
     padding: 1em;
     background-color: rgba(254, 255, 255, 0.6);
 }
@@ -280,7 +275,6 @@ fieldset {
     height: 25px;
     margin: 20px 20px;
     color: #013328;
-    position: center;
     background: transparent;
     border: 2px solid #013328;
     font-family: "EB Garamond", serif;
@@ -822,8 +816,15 @@ textarea::placeholder {
       }
 
     #design-message {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .copyright {
         font-size: small;
     }
+
+
 
   /*Mobile contact form*/
  .mobile-number, .surname {
@@ -892,6 +893,10 @@ textarea::placeholder {
             border-bottom: 1px solid white;
           }
 
+          .copyright {
+            font-size: small;
+          }
+
 /*MOBILE- 320 px*/
 
 @media only screen and (max-width: 320px) and (min-width: 200px) {
@@ -931,8 +936,7 @@ font-size: 20px;
     color: #013328;
     text-decoration: none;
   }
-  
-  .xmark {
+ .xmark {
     display: flex;
     position: absolute;
     top: 60px;
@@ -945,10 +949,9 @@ font-size: 20px;
 
 .design-message {
 padding:10px;
+font-size: 13px;
 }
-#second-p {
-    display: none;
-}
+
 
         }
 
