@@ -562,6 +562,7 @@ textarea::placeholder {
           }
                 
           .xmark {
+            z-index: 900;
             display: flex;
             border: none;
             position: absolute;
