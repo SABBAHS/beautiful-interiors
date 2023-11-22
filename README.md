@@ -32,7 +32,7 @@ Prior to designing the website, I used Cacoo and Balsamic to create wireframes i
 
 <table>
 <tr>
-<td><img src=assets/images/homepage.jpg width=100% height=auto alt="colour and text styles"></td>
+<td><img src=/assets/images/homepage.jpg width=100% height=auto alt="colour and text styles"></td>
 <td><img src=assets/images/footer.jpg width=100% height=auto alt="webpage structure"></td>
 <ul>
 <li>The index page consists of a consistent use of beige, green and white colours.</li>
@@ -133,6 +133,7 @@ I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
 
 - I've confirmed that no errors were flagged when passing my HTML code through the [official W3C Validator](https://validator.w3.org/#validate_by_input)
 - I've confirmed that no errors were flagged when passing my CSS code through the [official Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+<img src=assets/images/validCSS.jpg width=40% height=auto>
   
 
 # Credits
