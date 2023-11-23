@@ -3,7 +3,7 @@
 
 # [Beautiful Interiors](https://sabbahs.github.io/beautiful-interiors/)
 
-<!--INSERT AM I RESPONSIVE SCREENSHOT HERE-->
+<img src=assets/images/screens.jpg width=90% height=auto position=center>
 
 # Summary
 
@@ -48,7 +48,7 @@ Prior to designing the website, I used Cacoo and Balsamic to create wireframes i
 <td><td><img src=assets/images/projects-page.jpg width=100% height=auto alt="Projects Page"></td>
 <ul>
 <li>The projects page features a gallery of nine photographs of various interior design styles from bedroom to home office designs.</li> 
-<li>On larger screens their is a hover feature, where the background blurs and a text detailing the imagery appears, on smaller screens users are able to click on the images to see this effect.</li>
+<li>On larger screens their is a hover feature, where the background blurs and a text detailing the imagery appears.</li>
 <li>Using flexbox, the images were able to appear to be more inline and centered, also sizing down evenly as the size of the screen reduces.</li>
 </ul>
 </tr>
@@ -114,14 +114,14 @@ I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
 
 # Testing
 
-<!--subheading 1 = Insert validation codes and sub 2 = broswers tested on sub 3 = bugs and how you fixed them-->
 ## Browsers and Screen sizes
 - Ive confirmed that this project looks good on different browsers such as Chrome, Firefox, and Safari.
 - Ive confirmed the the pages are all responsive, and look good on large screen sizes (1600px, 1200px), laptop (1200px, 1050px), iPad (768px) and Mobile sizes (430px, 390px, 320px).
-- I've carried out extensive testing on multiple browsers to ensure all key elements such as the heading, image sizes, footer icons, navigation links and text are size appropriate. 
+- I've carried out extensive testing on multiple browsers to ensure all key elements such as the heading, images, footer icons, navigation links are size appropriate. 
+- I've confirmed text is readable, the images are not stretched and the colour scheme does not clash or cause any issues to the users ability to smoothly navigate around the web.
 - Here are some of the key areas: using flexbox on the projects page effectively placed images evenly as the screen reduces, the services page was rearranged to have only one image stack on top of each text box, and on the contacts page two unnecessary input fields were removed in order to be more size appropriate for the new screen size. 
-- I've confirm that the website is easy to navigate for a user, the menu works.
-- I've confirm that the form and submit button works. The form has required fields where the user is prompted to have filled before sending the form, and that the mobile field only allows numbers, and the email field prompts the user if an @ is missing.
+- I've confirmed that the website is easy to navigate for a user, the menu works.
+- I've confirmed that the form and submit button works. The form has required fields where the user is prompted to have filled before sending the form, and that the mobile field only allows numbers, and the email field prompts the user if an @ is missing.
   
 ## Bugs encountered 
   
@@ -129,10 +129,14 @@ I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
 - Earlier in the project none of the images or elements would appear, even after a hours of refreshing and searching for bugs on devtools and using validators, eventually no bugs were found which lead to opening a new workspace.
 - I initially had 21 images in my projects gallery, however the load time was very slow. During my mid-project review, my mentor Rahul suggested to stick to 9 images and apply a hover feature to make the gallery more interactive. Using Lighthouse, I saw the performance improved by 10% by reducing the images. 
 
+
+## Bugs left unfixed
+On the Projects page, for smaller screens such as mobile and laptop users should be able to click on the images to see the effect of image blurring and revealing a text box. This only works if the user presses down on the image, which from a user perspective is unlikely. I have applied several coding suggestions through stackoverflow, such as adding 'onclick=""' and ontouchstart="", however these end up being applied to all sites which it not ideal. I've tried to test this on devtools which will always show that it is working, its only been tested on Iphones. I did have tutor support, however they were unable to assist in getting this to work. 
+
 ## Validation 
 
-- I've confirmed that no errors were flagged when passing my HTML code through the [official W3C Validator](https://validator.w3.org/#validate_by_input)
-- I've confirmed that no errors were flagged when passing my CSS code through the [official Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- I've confirmed that no errors were flagged when passing all pages of my HTML code by direct input through the [official W3C Validator](https://validator.w3.org/#validate_by_input)
+- I've confirmed that no errors were flagged when passing my CSS code by direct input through the [official Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
   <br>
 <img src=assets/images/validCSS.jpg width=40% height=auto>
   
@@ -145,6 +149,6 @@ I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
 - On the projects page, I wanted a feature that pops up text as you hover over the image. The code that I applied here was inspired from this website: https://www.w3schools.com/howto/howto_css_image_overlay.asp.
 - Although this was taught on the course, I could not get the favicon to work, so I got it work through following this tutorial: https://www.youtube.com/watch?v=kEf1xSwX5D8.
 
-# deployment
+# Deployment
 
 The site was deployed to github, and can be found here: https://sabbahs.github.io/beautiful-interiors/
