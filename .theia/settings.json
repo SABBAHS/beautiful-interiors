@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/codeany/.pyenv/shims/python",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}
