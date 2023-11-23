@@ -396,7 +396,7 @@ textarea::placeholder {
     justify-content: center;
   }
   
-  .gallery:hover:active .overlay {
+  .gallery:hover .overlay {
     opacity: 1;
   }
   
