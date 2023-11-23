@@ -133,6 +133,7 @@ I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
 
 - I've confirmed that no errors were flagged when passing my HTML code through the [official W3C Validator](https://validator.w3.org/#validate_by_input)
 - I've confirmed that no errors were flagged when passing my CSS code through the [official Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+  <br>
 <img src=assets/images/validCSS.jpg width=40% height=auto>
   
 
