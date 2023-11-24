@@ -7,7 +7,7 @@
 
 # Summary
 
-Beautiful Interiors is a website for a interior designer company. Their services is described in the first page, under a interior design hero image. The targetted audience for this website is for potential clients who are seeking interior design, art consultation and renovation services on their residential properties mainly within the London area. The menu goes on to further detail the services offered, this includes a projects page showcasing a variety of designs through an image gallery. A services page which explains different types of services available such as bathroom renovaion to art restoration and more. Finally, a contact page with a form where users can fill in their contact details, and reason for enquiry in order to hear back from a team member. On this page users can also find the contact details of the company, and a map locating the office. 
+Beautiful Interiors is a website for a interior designer company. Their services is described in the first page, under a interior design hero image, with two videos relating to interior design. The targetted audience for this website is for potential clients who are seeking interior design, art consultation and renovation services on their residential properties mainly within the London area. The menu goes on to further detail the services offered, this includes a projects page showcasing a variety of designs through an image gallery. A services page which explains different types of services available such as bathroom renovaion to art restoration and more. Finally, a contact page with a form where users can fill in their contact details, and reason for enquiry in order to hear back from a team member. On this page users can also find the contact details of the company, and a map locating the office. 
 <br>
 Overall, the website is well designed, with a consistent colour scheme throughout the webpages using dark green, beige and white. The website features hover effects on the navigation bar and gallery images, stylish font styles that area clear to read, a simple to use contact form page and drop down menu with a toggle bar for iPad and Mobile users. 
 
@@ -36,10 +36,12 @@ Prior to designing the website, I used Cacoo and Balsamic to create wireframes i
 <tr>
 <td><img src=/assets/images/homepage.jpg width=100% height=auto alt="colour and text styles"></td>
 <td><img src=assets/images/footer.jpg width=100% height=auto alt="webpage structure"></td>
+<td><img src=assets/images/videos.jpg width=100% height=auto alt="webpage structure"></td>
 <ul>
 <li>The index page consists of a consistent use of beige, green and white colours.</li>
 <li>The logo also acts as a link to the homepage, and beside it to the right is a navigation bar that links to three pages, when hovered over the links on a desktop or laptop the text enlarges.</li>
 <li>Hero image is place in the center which zooms in when users open the webpage. A slogan is seen at the bottom left on larger screens.
+<li>Two You-tube videos are placed on the homepage which adds more functionality and content to the  homepage. 
 <li> A footer is consistently shown on every page with a similar colour scheme, linking it to four social media accounts with a copyright text just under it</li>
 </ul>
 </tr>
@@ -110,8 +112,8 @@ All images were sourced from unsplash.com
 <li><span style="color:green">Cacoo and Balsamic</span></li> Used to create wireframes before coding in order to have a visual example
 <li><span style="color:green">Stackoverflow</span></li>
 I searched for existing minor issues that were already posted on stackoverflow by members to help inspire quick solutions to any issues I was having with my code.
-<li><span style="color:green">Yout-tube</span></li>
-I searched for tutorials on how to add a favicon, and toggle bar from You-tube.
+<li><span style="color:green">You-tube</span></li>
+Two You-tube videos are placed on the homepage, I've also searched for tutorials on how to add a favicon, and toggle bar from You-tube. 
 
 
 # Testing
