@@ -186,12 +186,18 @@ main {
 
 /*VIDEO*/
 
-#video1-video2 {
-
-size: 50%;
-
+#videowrapper {
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
+#videointro {
+font-size: 40px;
+margin: 40px;
+text-align: center;
+
+}
 
 /*FOOTER*/
 footer {
@@ -565,6 +571,13 @@ border:0;
         margin: 20px;
     }
 
+    /*Video*/
+
+    #videosize {
+    width: 360px;
+    height: 215px;
+    }
+
         /*NAVBAR*/
         .hamburger {
             display: flex;
@@ -651,6 +664,16 @@ border:0;
         flex-direction: row;
     }
   
+    #videowrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+    }
+
+    #videointro {
+        font-size: x-large;
+    }
+
     .logo {
         float: left;
         margin: 5%;
@@ -801,6 +824,21 @@ border:0;
         line-height: 40px;
     }
 
+    /*video*/
+
+    #videowrapper {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center
+        }
+    
+        #videointro {
+            font-size: x-large;
+        }
+        #videosize {
+        width:360px;
+        height:215px;
+        }
     /*contact*/
     fieldset {
         margin-left: 5%;
@@ -870,7 +908,6 @@ border:0;
           
           .navbar {
             position: absolute;
-            /* a higher z-index put navbar above hamburger */
             z-index: 1000;
             top: 0;
             left: 50%;
@@ -970,6 +1007,21 @@ font-size: 20px;
 padding:10px;
 font-size: 13px;
 }
+
+/*video*/
+#videowrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+    }
+
+    #videointro {
+        font-size: x-large;
+    }
+    #videosize {
+    width:260px;
+    height:160px;
+    }
 
 fieldset {
     margin-right: 0;
