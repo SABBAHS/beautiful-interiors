@@ -573,7 +573,7 @@ border:0;
 
     /*Video*/
 
-    #videosize {
+    .videosize {
     width: 360px;
     height: 215px;
     }
@@ -606,7 +606,6 @@ border:0;
           
           .navbar {
             position: absolute;
-            /* a higher z-index put navbar above hamburger */
             z-index: 1000;
             top: 0;
             left: 50%;
@@ -719,7 +718,6 @@ border:0;
       
       .navbar {
         position: absolute;
-        /* a higher z-index put navbar above hamburger */
         z-index: 1000;
         top: 0;
         left: 50%;
@@ -835,7 +833,7 @@ border:0;
         #videointro {
             font-size: x-large;
         }
-        #videosize {
+        .videosize {
         width:360px;
         height:215px;
         }
@@ -1018,7 +1016,7 @@ font-size: 13px;
     #videointro {
         font-size: x-large;
     }
-    #videosize {
+    .videosize {
     width:260px;
     height:160px;
     }
