@@ -7,7 +7,9 @@
 
 # Summary
 
-Beautiful Interiors is a website for a interior designer company based in London. Their services is described in the first page, under a interior design hero image. The menu goes on to further detail the services offered, this includes a projects page showcasing a variety of designs through an image gallery. A services page which explains different types of services available to the potential clients such as bathroom renovaion to art restoration and more. Finally, a contact page where users can send their contact details, and reason for enquiry. On this page users will also find the contact details of the company, and a map locating the office. 
+Beautiful Interiors is a website for a interior designer company. Their services is described in the first page, under a interior design hero image. The targetted audience for this website is for potential clients who are seeking interior design, art consultation and renovation services on their residential properties mainly within the London area. The menu goes on to further detail the services offered, this includes a projects page showcasing a variety of designs through an image gallery. A services page which explains different types of services available such as bathroom renovaion to art restoration and more. Finally, a contact page with a form where users can fill in their contact details, and reason for enquiry in order to hear back from a team member. On this page users can also find the contact details of the company, and a map locating the office. 
+<br>
+Overall, the website is well designed, with a consistent colour scheme throughout the webpages using dark green, beige and white. The website features hover effects on the navigation bar and gallery images, stylish font styles that area clear to read, a simple to use contact form page and drop down menu with a toggle bar for iPad and Mobile users. 
 
 # Wireframes
 
