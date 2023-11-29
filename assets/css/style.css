@@ -702,7 +702,7 @@ border:0;
         float: left;
         font-size: 25px;
         line-height: 50px;
-        top: 5px;
+        top: 15px;
     }
 
     #design-message {
@@ -722,7 +722,7 @@ border:0;
         display: flex;
         border: none;
         position: absolute;
-        top: 20px;
+        top: 30px;
         left: 380px;
         font-size: 20px;
         color: #013328;  
