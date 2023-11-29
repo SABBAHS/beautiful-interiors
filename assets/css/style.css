@@ -229,9 +229,10 @@ footer {
     padding: 5%;
 }
 .copyright {
-font-size: 12px;
+font-size: 15px;
 position: absolute;
 right: 20px;
+bottom: 2px;
 }
 
 /*CONTACT PAGE*/
@@ -694,7 +695,7 @@ border:0;
     }
 
     #videointro {
-        font-size: x-large;
+        font-size: medium;
     }
 
     #logo {
@@ -804,6 +805,10 @@ border:0;
       .social-networks {
         font-size: small;
       }
+      .copyright {
+        font-size: 10px;
+        }
+
 }
 
 /*MOBILE- 390 px*/
@@ -908,11 +913,6 @@ border:0;
         font-size: 13px;
     }
     
-    .copyright {
-        font-size: small;
-    }
-
-
   /*Mobile contact form*/
  .mobile-number, .surname {
             display: none;
@@ -986,6 +986,9 @@ border:0;
           .social-networks {
             font-size: small;
           }
+          .copyright {
+            display: none;
+            }
         }
 
 /*MOBILE- 320 px*/
@@ -1073,5 +1076,8 @@ fieldset {
 
     footer {
     padding: 10px;
+    }
+    .copyright {
+    display: none;
     }
 }
