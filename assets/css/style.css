@@ -808,7 +808,7 @@ border:0;
 
 /*MOBILE- 390 px*/
 
-@media only screen and (max-width: 390px) and (min-width: 320px) {
+@media only screen and (max-width: 390px) and (min-width: 360px) {
 
 /*Services page*/
    .section1,
@@ -975,9 +975,6 @@ border:0;
             padding-bottom: 0.5rem;
           }
           
-          .navbar a:hover, .navbar a:focus {
-            border-bottom: 1px solid white;
-          }
 
           .copyright {
             font-size: small;
@@ -991,7 +988,26 @@ border:0;
             font-size: small;
           }
         }
-   
+/*MOBILE- 360 px*/
+
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+.hamburger {
+    left: 300px;
+    display: flex;
+    text-decoration: none;
+}
+li a {
+    text-decoration: none;
+}
+
+.xmark {
+    display: flex;
+    left: 110px;
+    text-decoration: none;
+}
+
+}
+
 /*MOBILE- 320 px*/
 
 @media only screen and (max-width: 320px) and (min-width: 200px) {
@@ -1009,6 +1025,10 @@ font-size: x-small;
 left: 10px;      
         }
 /*Header*/
+
+header {
+height: 15vh;
+}
 
 #logo {
     position: absolute;
@@ -1064,5 +1084,9 @@ font-size: 13px;
 
 fieldset {
     margin-right: 0;
+    }
+
+    footer {
+    padding: 10px;
     }
 }
