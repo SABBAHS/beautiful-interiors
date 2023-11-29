@@ -39,7 +39,7 @@ Before designing the website, I used Cacoo and Balsamic to create wireframes to 
 <td><img src=assets/images/videos.jpg width=100% height=auto alt="webpage structure"></td>
 <ul>
 <li>The index page consists of a consistent use of beige, green and white colours.</li>
-<li>The logo also acts as a link to the homepage, and beside it to the right is a navigation bar that links to three pages, when hovered over the links on a desktop or laptop the text enlarges.</li>
+<li>The logo also acts as a link to the homepage, and beside it to the right is a navigation bar that links to three pages, when hovered over the links on a desktop or laptop the text changes colour to grey.</li>
 <li>Hero image is placed in the center which zooms in when users open the webpage. A slogan is seen at the bottom left on larger screens.
 <li>Two YouTube videos are placed on the homepage which adds more functionality and content to the  homepage. 
 <li> A footer is consistently shown on every page with a similar colour scheme, linking it to four social media accounts. The copyright is intentionally placed for up to 430px as it did not look good on smaller screens.</li>
