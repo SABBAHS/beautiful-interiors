@@ -776,10 +776,6 @@ border:0;
         text-decoration: none;
         padding-bottom: 0.5rem;
       }
-      
-      .navbar a:hover, .navbar a:focus {
-        border-bottom: 1px solid white;
-      }
 
       /*Mobile contact form*/
       .mobile-number, .surname {
