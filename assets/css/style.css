@@ -50,7 +50,7 @@ left: 30%;
 font-size: 30px;
 color: whitesmoke;
 padding: 20px;
-background-color: rgba(0, 40, 2, .40);
+background-color: rgba(0, 40, 2, .60);
 }
 
 /*NAVIGATION BAR*/
@@ -249,6 +249,7 @@ fieldset {
     margin: 5% 25%;
     padding: 1em;
     background-color: rgba(254, 255, 255, 0.6);
+    border: none;
 }
 
 #backgroundform {
@@ -320,7 +321,6 @@ textarea::placeholder {
     margin: 20px;
     font-family: "EB Garamond", serif;
     width: 100px;
-    border-radius: 10px;
 }
 
 #button1:hover,
@@ -470,7 +470,7 @@ border:0;
     }
 
     footer {
-        padding: 50px;
+        padding: 25px;
     }
 
 }
@@ -537,6 +537,10 @@ border:0;
         border: 2px solid #013328;
         display: block;
         float: right;
+    }
+
+    footer {
+        padding: 20px;
     }
 }
 
@@ -668,6 +672,10 @@ border:0;
           #design-message {
            top: 40%;
            padding: 40px 40px;
+          }
+
+          footer {
+            padding: 20px;
           }
 }
 
@@ -982,6 +990,7 @@ border:0;
           .social-networks {
             font-size: small;
           }
+        }
    
 /*MOBILE- 320 px*/
 
@@ -1056,6 +1065,4 @@ font-size: 13px;
 fieldset {
     margin-right: 0;
     }
-
-
-    }
+}
