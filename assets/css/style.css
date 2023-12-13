@@ -929,7 +929,8 @@ border:0;
     fieldset {
         margin-left: 5%;
         margin-top: 10%;
-        width: 90%;
+        width: 80%;
+        margin: 5% 10%;
     }
 
     .first-name,
@@ -1054,7 +1055,7 @@ border:0;
 
 /*MOBILE- 320 px*/
 
-@media only screen and (max-width: 320px) and (min-width: 200px) {
+@media only screen and (max-width: 320px) and (min-width: 280px) {
 
 /*Projects page*/
     .gallery {
@@ -1107,6 +1108,26 @@ font-size: 20px;
     text-decoration: none;
    
  }
+
+ .navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    /* basic menu styling*/
+    list-style: none;
+    background: #013328;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animate slide up/down */
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
   
 li a {
 font-size: 16px;
@@ -1142,4 +1163,173 @@ fieldset {
     .copyright {
     display: none;
     }
+    .design:last-child {
+        display: none;
+    }
 }
+
+/*MOBILE- 280 px Galaxy Fold*/
+
+@media only screen and (max-width: 280px) and (min-width: 200px) {
+
+    /*Projects page*/
+        .gallery {
+        width: 250px;
+        height: 400px;
+        }
+    /*footer*/
+    
+    .social-networks {
+    font-size: x-small;
+    left: 10px;      
+            }
+    /*Header*/
+    
+    header {
+    height: 15vh;
+    }
+    
+    #logo {
+    position: absolute;
+    line-height: 30px;
+    font-size: 20px;
+    top: 1px;
+    padding: 20px;
+    }
+    
+    #slogan {
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    }
+    
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 26px;
+        left: 200px;
+        font-size: 20px;
+        padding: 10px;
+        color: #013328;
+        text-decoration: none;
+      }
+     .xmark {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        font-size: 15px;
+        background: #013328;
+        color: #eed9c4;
+        text-decoration: none;
+       
+     }
+    
+     .navbar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        /* basic menu styling*/
+        list-style: none;
+        background: #013328;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        /* animate slide up/down */
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+      }
+      .navbar:target {
+        /* show navbar */
+        transform: translateY(0);
+      }
+    li a {
+    font-size: 16px;
+    }
+
+    .active1, .active2, .active3 {
+        display: block;
+        font-family: "EB Garamond", serif;
+        color: #eed9c4;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding-bottom: 0.5rem;
+      }
+    
+    .design-message {
+    padding:10px;
+    font-size: 13px;
+    }
+    
+    /*video*/
+    #videowrapper {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center
+        }
+    
+        #videointro {
+            font-size: x-large;
+        }
+        .videosize {
+        width:260px;
+        height:160px;
+        }
+    
+        /*Services page*/
+   .section1,
+   .section2,
+   .section3 {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .design img {
+        flex: none;
+        height: 350px;
+        width: 250px;
+    }
+
+    .servicetext {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .design:last-child {
+        display: none;
+    }
+
+      /*Mobile contact form*/
+  .mobile-number, .surname {
+    display: none;
+  }
+  .first-name, .email, .natureofenquiry, .yourenquiry {
+    width: 90%;
+  }
+  fieldset {
+    display: inline-block;
+    width: 90%;
+    margin: 2%;
+  }
+    footer {
+    padding: 10px;
+    }
+    .copyright {
+    display: none;
+    }
+
+    .design:last-child {
+        display: none;
+    }
+    
+    }
