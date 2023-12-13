@@ -845,7 +845,7 @@ border:0;
 
     #logo {
         position: absolute;
-        left: 8px;
+        left: 4px;
         top: 15px;
         font-size: 20px;
         line-height: 40px;
@@ -919,20 +919,26 @@ border:0;
     
         /*navbar*/
 
+
+
           .hamburger {
             position: absolute;
             top: 15px;
-            left: 330px;
+            left: 295px;
             padding: 10px;
             color: #013328;
+            display: flex;
+            text-decoration: none;
+            font-size: 22px;
           }
           
           .xmark {
             position: absolute;
-            top: 60px;
-            left: 140px;
+            top: 20px;
+            left: 100px;
             background: #013328;
             color: #eed9c4;
+            display: flex;
           }
           
           .navbar {
@@ -985,7 +991,14 @@ border:0;
           .copyright {
             display: none;
             }
+
+           .gallery {
+            width: 300px;
+            height: 450px;
+            }
         }
+
+
 
 /*MOBILE- 320 px*/
 
@@ -1034,12 +1047,13 @@ font-size: 20px;
  .xmark {
     display: flex;
     position: absolute;
-    top: 60px;
+    top: 20px;
     left: 100px;
     font-size: 15px;
     background: #013328;
     color: #eed9c4;
     text-decoration: none;
+   
  }
   
 li a {
