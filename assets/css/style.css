@@ -546,7 +546,7 @@ border:0;
 }
 
 /* TABLET VIEW - 768 px*/
-@media only screen and (max-width: 768px) and (min-width: 430px) {
+@media only screen and (max-width: 768px) and (min-width: 540px) {
 
     .section1,
     .section2,
@@ -679,6 +679,37 @@ border:0;
             padding: 20px;
           }
 }
+
+/* Surface Duo 540px*/
+@media only screen and (max-width: 540px) and (min-width: 430px) {
+ 
+    header {
+    height: 24vh;
+    }
+    .hamburger {
+    display: flex;
+    top: 60px;
+    left: 450px;
+    }
+    .xmark {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    font-size: 30px;
+    text-decoration: none;
+
+      }
+    .videosize {
+    width: 250px;
+    height: 200px;
+    }
+
+    .copyright {
+        display: none;
+    }
+}
+
 
 /*IPHONE 15 PRO MAX*/
 @media only screen and (max-width: 430px) and (min-width: 390px) {
