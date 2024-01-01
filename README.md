@@ -148,11 +148,11 @@ On the Projects page, for smaller screens such as mobile and laptop users should
 
 # Credits
 
-- As simple as the burger toggle appears, I had followed two different tutorials that included javscript, however my tutor was able to assist in helping me find a tutorial that was simpler to implement which was this one: https://dev.to/ljcdev/hamburger-css-no-js-2dfa. I had to change the code to have it validated. Thank you to Jason at CodeIntitute for helping me with this.
+- As simple as the burger toggle appears, I had followed two different tutorials that included javscript, however my tutor was able to assist in helping me find a tutorial that was simpler to implement which was this one: https://dev.to/ljcdev/hamburger-css-no-js-2dfa. I had to change the code to have it validated. Thank you to Jason at CodeIntitute for helping me with this. Code reference added in CSS. 
 - I had attempted these two before that: https://www.youtube.com/watch?v=At4B7A4GOPg and https://codepen.io/gjsayers/pen/ExEwGWw. 
 - Thanks to my mentor for sending me this game: https://flexboxfroggy.com/, it helped me to understand and apply flexbox into my project. 
-- On the projects page, I wanted a feature that pops up text as you hover over the image. The code that I applied here was inspired by this website: https://www.w3schools.com/howto/howto_css_image_overlay.asp.
-- Although this was taught on the course, I could not get the favicon to work, so I got it work through following this tutorial: https://www.youtube.com/watch?v=kEf1xSwX5D8.
+- On the projects page, I wanted a feature that pops up text as you hover over the image. The code that I applied here was inspired by this website: https://www.w3schools.com/howto/howto_css_image_overlay.asp.Code reference added in CSS. 
+- Although this was taught on the course, I could not get the favicon to work, so I got it work through following this tutorial: https://www.youtube.com/watch?v=kEf1xSwX5D8. Code reference added in HTML. 
 
 # Deployment
 To deploy my webpage, I took the following steps:
