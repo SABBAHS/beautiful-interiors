@@ -115,6 +115,10 @@ Used to create wireframes before coding in to have a visual examples.
 I searched for existing minor issues that were already posted on Stackoverflow by members to help inspire quick solutions to any issues I was having with my code.
 <li><span style="color:green">YouTube</span></li>
 Two YouTube videos are placed on the homepage, I've also searched for tutorials on how to add a favicon, and toggle bar from YouTube. 
+<li><span style="color:green">codebeautify.org</span></li>
+Used Codebeautify to tidy up code and indentation.
+
+
 
 
 # Testing
@@ -134,9 +138,17 @@ Two YouTube videos are placed on the homepage, I've also searched for tutorials 
 - Earlier in the project none of the images or elements would appear, even after hours of refreshing and searching for bugs on dev tools and using validators, eventually no bugs were found which led to the opening of a new workspace.
 - I initially had 21 images in my projects gallery, however, the load time was very slow. During my mid-project review, my mentor Rahul suggested sticking to 9 images and applying a hover feature to make the gallery more interactive. Using Lighthouse, I saw the performance improved by 10% by reducing the images. 
 
+## Revised adjustments
+
+- Cleaned up code using a formatter https://codebeautify.org/
+- Fixed issue: burger toggle is now visible on smaller screen sizes from 390 - 280px
+- Ive added cleaner styling by adding a two media queries to duo pro 540 screen size and galaxy fold 280px
+- Images on the projects pages have been resized smaller with media query to look more well-fitted
+- Restyled the fieldset on the contacts page for the smaller screens from 430px to look more size appropriate
 
 ## Bugs left unfixed
 On the Projects page, for smaller screens such as mobile and laptop users should be able to click on the images to see the effect of image blurring and revealing a text box. This only works if the user presses down on the image, which from a user perspective is unlikely. I have applied several coding suggestions through Stackoverflow, such as adding 'onclick=""' and ontouchstart="", however, these ended up being applied to all sites which it not ideal. I've tried to test this on dev tools which will always show that it is working, it's only been tested on iPhones. I did have tutor support, however, they were unable to assist in getting this to work. 
+
 
 ## Validation 
 
