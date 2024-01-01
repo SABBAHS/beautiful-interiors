@@ -543,6 +543,10 @@ border:0;
     footer {
         padding: 20px;
     }
+
+    .social-networks {
+    bottom: 10px;
+    }
 }
 
 /* TABLET VIEW - 768 px*/
@@ -831,6 +835,7 @@ border:0;
  
       .social-networks {
         font-size: small;
+        bottom: 15px;  
       }
       .copyright {
         font-size: 10px;
@@ -855,6 +860,11 @@ border:0;
 
     .design:last-child {
         display: none;
+    }
+
+    fieldset {
+    width: 300px;
+    margin: 5% 13%;
     }
 
 }
