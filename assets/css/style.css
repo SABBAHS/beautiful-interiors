@@ -396,7 +396,7 @@ border:0;
     border: solid #013328 1px;
       }
 
-/*overlay text for images */
+/*overlay text for images - code inspired from here: https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
 
   .image {
     display: block;
@@ -603,7 +603,7 @@ border:0;
     height: 215px;
     }
 
-        /*NAVBAR*/
+        /*NAVBAR - code from here: https://dev.to/ljcdev/hamburger-css-no-js-2dfa*/
         .hamburger {
             display: flex;
             border: none;
