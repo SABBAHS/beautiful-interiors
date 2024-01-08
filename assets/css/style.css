@@ -681,6 +681,13 @@ border:0;
           footer {
             padding: 20px;
           }
+
+          #videowrapper {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center
+            }
+        
 }
 
 @media only screen and (max-width: 700px) and (min-width: 540px) {
@@ -711,7 +718,6 @@ border:0;
         background: #013328;
         color: #eed9c4;
         text-decoration: none;
-
       }
       
       .navbar {
@@ -747,8 +753,29 @@ border:0;
         font-size: 1.2rem;
         text-decoration: none;
         padding-bottom: 0.5rem;
+
       }
+      #videowrapper {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center
+        }
+
+    /*service page*/
+    .design:last-child {
+        display: none;
+    }
+
+    .design img {
+        height: 400px;
+        width: 300px;
+    }
+    .servicetext {
+        font-size: 16px;
+    }
 }
+
+
 
 /* Surface Duo 540px*/
 @media only screen and (max-width: 540px) and (min-width: 430px) {
@@ -768,7 +795,7 @@ border:0;
     font-size: 20px;
     color: #013328;  
     text-decoration: none; 
-      }
+    }
 
     .xmark {
     display: flex;
@@ -778,7 +805,7 @@ border:0;
     font-size: 30px;
     text-decoration: none;
     color: #eed9c4;
-      }
+    }
 
     .navbar {
     position: absolute;
@@ -798,12 +825,12 @@ border:0;
     /* animate slide up/down */
     transform: translateY(-100%);
     transition: transform 0.2s ease;
-      }
+    }
 
     .navbar:target {
     /* show navbar */
     transform: translateY(0);
-      }
+    }
     .active1, .active2, .active3 {
     display: block;
     font-family: "EB Garamond", serif;
@@ -812,17 +839,36 @@ border:0;
     font-size: 1.2rem;
     text-decoration: none;
     padding-bottom: 0.5rem;
-      }
-      
-      
+    }
+
+    #videowrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+    }
+
     .videosize {
     width: 250px;
     height: 200px;
     }
 
     .copyright {
-        display: none;
+    display: none;
     }
+
+    /*service page*/
+    .design:last-child {
+    display: none;
+    }
+    
+    .design img {
+    height: 400px;
+    width: 300px;
+    }
+    .servicetext {
+    font-size: 16px;
+    }
+
 }
 
 
@@ -1424,7 +1470,6 @@ fieldset {
         text-align: center;
         font-size: 15px;
     }
-
     .design:last-child {
         display: none;
     }
