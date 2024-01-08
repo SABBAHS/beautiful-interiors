@@ -10,7 +10,6 @@ body {
     font-family: "EB Garamond", serif;
     color: #013328;
     min-height: 100vh;
-
 }
 
 /*HEADER*/
@@ -550,7 +549,7 @@ border:0;
 }
 
 /* TABLET VIEW - 768 px*/
-@media only screen and (max-width: 768px) and (min-width: 540px) {
+@media only screen and (max-width: 768px) and (min-width: 700px) {
 
     .section1,
     .section2,
@@ -580,6 +579,7 @@ border:0;
         position: absolute;
         left: 10px;
         top: 15px;
+        font-size: 35px;
         }
 
     fieldset {
@@ -668,7 +668,6 @@ border:0;
             padding-bottom: 0.5rem;
           }
           
-
           #slogan {
           font-size: 20px;
           top: 450px;
@@ -684,17 +683,93 @@ border:0;
           }
 }
 
+@media only screen and (max-width: 700px) and (min-width: 540px) {
+
+    #logo {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        display: flex;
+        border: none;
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        font-size: 30px;
+        color: #013328;  
+        text-decoration: none; 
+      }
+            
+      .xmark {
+        z-index: 900;
+        display: flex;
+        border: none;
+        position: absolute;
+        top: 70px;
+        left: 200px;
+        font-size: 30px;
+        background: #013328;
+        color: #eed9c4;
+        text-decoration: none;
+
+      }
+      
+      .navbar {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        /* basic menu styling*/
+        list-style: none;
+        background: #013328;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        /* animate slide up/down */
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+      }
+      
+      .navbar:target {
+        /* show navbar */
+        transform: translateY(0);
+      }
+      
+      .active1, .active2, .active3 {
+        display: block;
+        font-family: "EB Garamond", serif;
+        color: #eed9c4;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding-bottom: 0.5rem;
+      }
+}
+
 /* Surface Duo 540px*/
 @media only screen and (max-width: 540px) and (min-width: 430px) {
- 
+    #logo {
+    line-height: 40px;
+    font-size: 20px;
+    }
     header {
-    height: 24vh;
+    height: 15vh;
     }
     .hamburger {
     display: flex;
-    top: 60px;
-    left: 450px;
-    }
+    border: none;
+    position: absolute;
+    top: 45px;
+    left: 420px;
+    font-size: 20px;
+    color: #013328;  
+    text-decoration: none; 
+      }
+
     .xmark {
     display: flex;
     position: absolute;
@@ -702,8 +777,44 @@ border:0;
     left: 150px;
     font-size: 30px;
     text-decoration: none;
-
+    color: #eed9c4;
       }
+
+    .navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    /* basic menu styling*/
+    list-style: none;
+    background: #013328;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animate slide up/down */
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+      }
+
+    .navbar:target {
+    /* show navbar */
+    transform: translateY(0);
+      }
+    .active1, .active2, .active3 {
+    display: block;
+    font-family: "EB Garamond", serif;
+    color: #eed9c4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+      }
+      
+      
     .videosize {
     width: 250px;
     height: 200px;
@@ -981,7 +1092,6 @@ border:0;
           }
     
         /*navbar*/
-
 
 
           .hamburger {
