@@ -248,7 +248,7 @@ footer {
 fieldset {
 	display: inline-block;
 	width: 50%;
-	margin: 5% 25%;
+    margin: 5% 25% 0px 25%;
 	padding: 1em;
 	background-color: rgba(254, 255, 255, 0.6);
 	border: none;
