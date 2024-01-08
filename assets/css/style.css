@@ -580,7 +580,7 @@ textarea::placeholder {
 	}
 
 	header {
-		height: 10vh;
+		height: 100px;
 	}
 
 	#logo {
@@ -806,6 +806,9 @@ textarea::placeholder {
 		margin-bottom: 0px;
 		margin-top: 10px;
 	}
+    .social-networks {
+        bottom: 10px;
+    }
 }
 
 
@@ -819,7 +822,9 @@ textarea::placeholder {
 	header {
 		height: 15vh;
 	}
-
+    .social-networks {
+        bottom: 10px;
+    }
 	.hamburger {
 		display: flex;
 		border: none;
@@ -938,7 +943,7 @@ textarea::placeholder {
 
 	header {
 		flex-direction: row;
-		height: 10vh;
+        height: 85px;
 	}
 
 	#videowrapper {
@@ -1138,7 +1143,7 @@ textarea::placeholder {
 	/*homepage*/
 
 	header {
-		height: 10vh;
+        height: 70px;
 	}
 
 	#logo {

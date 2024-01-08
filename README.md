@@ -140,15 +140,17 @@ Used Codebeautify to tidy up code and indentation.
 
 ## Revised adjustments
 
-- Cleaned up code using a formatter https://codebeautify.org/
-- Fixed issue: burger toggle is now visible on smaller screen sizes from 390 - 280px
-- Ive added cleaner styling by adding a two media queries to duo pro 540 screen size and galaxy fold 280px
-- Images on the projects pages have been resized smaller with media query to look more well-fitted
-- Restyled the fieldset on the contacts page for the smaller screens from 430px to look more size appropriate
+- Cleaned up code using an online format tool: https://codebeautify.org/.
+- Fixed issue: burger toggle is now visible on smaller screen sizes from 390 - 280px.
+- I've added cleaner styling by adding two media queries for Duo Pro 540 screen size and Galaxy Fold 280px.
+- Images on the project pages have been resized smaller with media queries to look more well-fitted.
+- I restyled the Fieldset on the contact page for the smaller screens from 430px to look more size-appropriate.
+- Flexbox added to videos so they don't squash when the screen reduces in size.
+- New media query 700-768px was added to eliminate the header which appeared squashed at this point.
+- Overall all pages look good across various devices and screen sizes as a result of the above fixes and changes. 
 
 ## Bugs left unfixed
 On the Projects page, for smaller screens such as mobile and laptop users should be able to click on the images to see the effect of image blurring and revealing a text box. This only works if the user presses down on the image, which from a user perspective is unlikely. I have applied several coding suggestions through Stackoverflow, such as adding 'onclick=""' and ontouchstart="", however, these ended up being applied to all sites which it not ideal. I've tried to test this on dev tools which will always show that it is working, it's only been tested on iPhones. I did have tutor support, however, they were unable to assist in getting this to work. 
-
 
 ## Validation 
 
