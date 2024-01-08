@@ -1329,9 +1329,33 @@ fieldset {
     .copyright {
     display: none;
     }
+
+            /*Services page*/
+   .section1,
+   .section2,
+   .section3 {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .design img {
+        flex: none;
+        height: 350px;
+        width: 250px;
+    }
+/*services*/
+    .servicetext {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
     .design:last-child {
         display: none;
     }
+
 }
 
 /*MOBILE- 280 px Galaxy Fold*/
