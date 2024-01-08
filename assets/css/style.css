@@ -1,1580 +1,1679 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Libre+Baskerville&family=Playfair+Display&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "EB Garamond", serif;
-    color: #013328;
-    min-height: 100vh;
+	font-family: "EB Garamond", serif;
+	color: #013328;
+	min-height: 100vh;
 }
 
 /*HEADER*/
 header {
-    background-color: #eed9c4;
-    font-family: "Playfair Display", serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+	background-color: #eed9c4;
+	font-family: "Playfair Display", serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
 }
 
 h1 {
-    color: #013328;
-    font-family: "Playfair Display", serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 290%;
-    margin-left: 20px;
+	color: #013328;
+	font-family: "Playfair Display", serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 290%;
+	margin-left: 20px;
 }
 
 h2 {
-    color: #013328;
-    font-family: "Playfair Display", serif;
+	color: #013328;
+	font-family: "Playfair Display", serif;
 }
 
 #logo {
-    float: left;
-    margin-left: auto;
-    padding-left: 20px;
+	float: left;
+	margin-left: auto;
+	padding-left: 20px;
 }
 
 #slogan {
-position: absolute;
-top: 400px;
-left: 30%;
-font-size: 30px;
-color: whitesmoke;
-padding: 20px;
-background-color: rgba(0, 40, 2, .60);
+	position: absolute;
+	top: 400px;
+	left: 30%;
+	font-size: 30px;
+	color: whitesmoke;
+	padding: 20px;
+	background-color: rgba(0, 40, 2, .60);
 }
 
 /*NAVIGATION BAR*/
-.hamburger, .xmark  {
-    display: none;
+.hamburger,
+.xmark {
+	display: none;
 }
 
 .menu {
-    font-size: 120%;
-    letter-spacing: 1px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
+	font-size: 120%;
+	letter-spacing: 1px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
 }
 
 .menu,
 #logo {
-    line-height: 70px;
+	line-height: 70px;
 }
 
 .nav {
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    list-style-type: none;
+	display: flex;
+	min-height: 70px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	list-style-type: none;
 }
 
 li a {
-    float: right;
-    margin-right: 20px;
-    list-style-type: none;
-    font-family: "Playfair Display", serif;
-    color: #013328;
-    text-decoration: none;
-    align-items: center;
-    padding: 5px 10%;
+	float: right;
+	margin-right: 20px;
+	list-style-type: none;
+	font-family: "Playfair Display", serif;
+	color: #013328;
+	text-decoration: none;
+	align-items: center;
+	padding: 5px 10%;
 }
 
- li {
-    display: inline-block;
-    padding: 0 10px;
-    align-items: center;
+li {
+	display: inline-block;
+	padding: 0 10px;
+	align-items: center;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    letter-spacing: 1px;
-    font-size: large;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	letter-spacing: 1px;
+	font-size: large;
 }
 
 li a {
-    color: inherit;
-    list-style-type: none;
-    font-size: 150%;
+	color: inherit;
+	list-style-type: none;
+	font-size: 150%;
 }
 
 li a:hover,
 li a:focus {
-    color:grey;
+	color: grey;
 }
 
 .active1 .active2 .active3 {
-    padding: 10px 20px 10px 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 .navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
 }
 
 /*MAIN CONTENT*/
 main {
-    background-color: #fcfcf6;
+	background-color: #fcfcf6;
 }
 
 /*HERO IMAGE*/
 
 #hero-outer {
-    height: 700px;
-    width: 100%;
-    overflow: hidden;
+	height: 700px;
+	width: 100%;
+	overflow: hidden;
 }
 
 #hero-image {
-    height: 700px;
-    width: 100%;
-    margin: auto;
-    background-image: url("../images/livingbeautyroom.jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    /*Zoom effect*/
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+	height: 700px;
+	width: 100%;
+	margin: auto;
+	background-image: url("../images/livingbeautyroom.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	/*Zoom effect*/
+	animation-name: hero-zoom;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
+	from {
+		transform: scale(1);
+	}
 
-    to {
-        transform: scale(1.1);
-    }
+	to {
+		transform: scale(1.1);
+	}
 }
 
 
 /*HOMEPAGE TEXT*/
 
 #design-message {
-    color: #013328;
-    font-family: "EB Garamond", serif;
-    text-align: center;
-    width: 80%;
-    font-size: 100%;
-    text-align: center;
-    position: relative;
-    left: 10%;
-    padding: 40px;
+	color: #013328;
+	font-family: "EB Garamond", serif;
+	text-align: center;
+	width: 80%;
+	font-size: 100%;
+	text-align: center;
+	position: relative;
+	left: 10%;
+	padding: 40px;
 
 }
 
 /*VIDEO*/
 
 #videowrapper {
-display: flex;
-justify-content: center;
-gap: 20px;
-margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 40px;
 }
 
 #videointro {
-font-size: 25px;
-margin: 40px;
-text-align: center;
+	font-size: 25px;
+	margin: 40px;
+	text-align: center;
 
 }
 
 /*FOOTER*/
 footer {
-    background-color: #eed9c4;
-    height: 160px;
-    overflow: hidden;
-    height: 10vh;
-    padding: 25px;
-    position: absolute;
-    width: 100%;
+	background-color: #eed9c4;
+	height: 160px;
+	overflow: hidden;
+	height: 10vh;
+	padding: 25px;
+	position: absolute;
+	width: 100%;
 }
 
 .social-networks {
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .social-networks>li {
-    display: inline;
+	display: inline;
 }
 
 .social-networks i li {
-    font-size: 30px;
-    color: #013328;
-    margin-top: 50px;
-    padding: 5%;
+	font-size: 30px;
+	color: #013328;
+	margin-top: 50px;
+	padding: 5%;
 }
+
 .copyright {
-font-size: 15px;
-position: absolute;
-right: 20px;
-bottom: 2px;
+	font-size: 15px;
+	position: absolute;
+	right: 20px;
+	bottom: 2px;
 }
 
 /*CONTACT PAGE*/
 
 #legend fieldset {
-    font-size: xx-large;
-    color: #013328;
-    font-family: "Playfair Display", serif;
-    border-color: #013328;
+	font-size: xx-large;
+	color: #013328;
+	font-family: "Playfair Display", serif;
+	border-color: #013328;
 }
 
 fieldset {
-    display: inline-block;
-    width: 50%;
-    margin: 5% 25%;
-    padding: 1em;
-    background-color: rgba(254, 255, 255, 0.6);
-    border: none;
+	display: inline-block;
+	width: 50%;
+	margin: 5% 25%;
+	padding: 1em;
+	background-color: rgba(254, 255, 255, 0.6);
+	border: none;
 }
 
 #backgroundform {
-    background-image: url("../images/reception1.jpeg");
-    height: 900px;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+	background-image: url("../images/reception1.jpeg");
+	height: 900px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .first-name,
 .email {
-    width: 42%;
-    height: 25px;
-    margin: 10px 20px;
-    color: #013328;
-    background: transparent;
-    border: 2px solid #013328;
-    display: block;
-    float: left;
+	width: 42%;
+	height: 25px;
+	margin: 10px 20px;
+	color: #013328;
+	background: transparent;
+	border: 2px solid #013328;
+	display: block;
+	float: left;
 
 }
 
 .surname,
 .mobile-number {
-    width: 42%;
-    height: 25px;
-    margin: 10px 20px;
-    color: #013328;
-    background: transparent;
-    border: 2px solid #013328;
-    display: block;
-    float: right;
+	width: 42%;
+	height: 25px;
+	margin: 10px 20px;
+	color: #013328;
+	background: transparent;
+	border: 2px solid #013328;
+	display: block;
+	float: right;
 }
 
 .natureofenquiry,
 .yourenquiry {
-    width: 94%;
-    height: 25px;
-    margin: 20px 20px;
-    color: #013328;
-    background: transparent;
-    border: 2px solid #013328;
-    font-family: "EB Garamond", serif;
+	width: 94%;
+	height: 25px;
+	margin: 20px 20px;
+	color: #013328;
+	background: transparent;
+	border: 2px solid #013328;
+	font-family: "EB Garamond", serif;
 }
 
 .yourenquiry {
-    height: 90px;
+	height: 90px;
 }
 
 input::placeholder {
-    color: #013328;
-    background: transparent;
-    font-family: "EB Garamond", serif;
+	color: #013328;
+	background: transparent;
+	font-family: "EB Garamond", serif;
 }
 
 textarea::placeholder {
-    color: #013328;
-    font-family: "EB Garamond", serif;
+	color: #013328;
+	font-family: "EB Garamond", serif;
 }
 
 #button1 {
-    border: 2px solid #013328;
-    background-color: #013328;
-    color: #eed9c4;
-    margin: 20px;
-    font-family: "EB Garamond", serif;
-    width: 100px;
+	border: 2px solid #013328;
+	background-color: #013328;
+	color: #eed9c4;
+	margin: 20px;
+	font-family: "EB Garamond", serif;
+	width: 100px;
 }
 
 #button1:hover,
 #button1:focus,
 #button1:active {
-    background-color: #eed9c4;
-    color: #013328;
-    transition: 0.7s;
+	background-color: #eed9c4;
+	color: #013328;
+	transition: 0.7s;
 }
 
 #contactdetails {
-    text-align: center;
-    background-color: rgba(254, 255, 255, 0.6);
+	text-align: center;
+	background-color: rgba(254, 255, 255, 0.6);
 }
 
 #contactmap {
-width: 100%;
-height:300px; 
-border:0;
+	width: 100%;
+	height: 300px;
+	border: 0;
 }
 
 /*SERVICES PAGE*/
 
 .container1 {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .section1,
 .section2,
 .section3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 .design {
-    flex: 1;
+	flex: 1;
 }
 
 .design img {
-    padding: 10px;
-    height: 600px;
-    width: 400px;
+	padding: 10px;
+	height: 600px;
+	width: 400px;
 }
 
 .servicetext {
-    color: #013328;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    padding: 5%;
+	color: #013328;
+	font-family: "EB Garamond", serif;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	padding: 5%;
 }
 
 /*PROJECTS*/
 .containimages {
-    margin: 20px;
-    clear: both;
-    gap: 20px;
-    column-count: 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	margin: 20px;
+	clear: both;
+	gap: 20px;
+	column-count: 3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .gallery {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    border: solid #013328 1px;
-      }
+	position: relative;
+	width: 400px;
+	height: 600px;
+	border: solid #013328 1px;
+}
 
 /*overlay text for images - code inspired from here: https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
 
-  .image {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+.image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: rgba(254, 255, 255, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .gallery:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: #013328;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgba(254, 255, 255, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: #013328;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
 
 /* LAPTOP VIEW - 1200 px*/
 
 @media only screen and (max-width: 1200px) and (min-width:1050px) {
-  /*header*/
+	/*header*/
 
-    .social-networks {
-    font-size: medium;
-   }
-#logo {
-    font-size: 190%;
-}
-   .menu li {
-    font-size: 90%;
-   }
+	.social-networks {
+		font-size: medium;
+	}
 
-    .design img {
-        flex-direction: column;
-        height: 550px;
-        width: 350px;
-    }
-    #slogan {
-        position: absolute;
-        top: 400px;
-        left: 20%;
-    }
-    .servicetext {
-        font-size: 19px
-    }
+	#logo {
+		font-size: 190%;
+	}
 
-    .container-nav {
-        flex-direction: column;
-    }
-    .section1 .section2 .section3 {
-        flex-direction: column;
-    }
+	.menu li {
+		font-size: 90%;
+	}
 
-    footer {
-        padding: 25px;
-    }
+	.design img {
+		flex-direction: column;
+		height: 550px;
+		width: 350px;
+	}
+
+	#slogan {
+		position: absolute;
+		top: 400px;
+		left: 20%;
+	}
+
+	.servicetext {
+		font-size: 19px
+	}
+
+	.container-nav {
+		flex-direction: column;
+	}
+
+	.section1 .section2 .section3 {
+		flex-direction: column;
+	}
+
+	footer {
+		padding: 25px;
+	}
 
 }
 
 /* SCREEN REDUCED - 1050 - 768 px*/
 @media only screen and (max-width: 1050px) and (min-width: 768px) {
-    .section1 .section2 .section3 {
-        flex-direction: column;
-    }
+	.section1 .section2 .section3 {
+		flex-direction: column;
+	}
 
-    .design img {
-        height: 350px;
-        width: 250px;
-        margin-top: 100px;
-    }
+	.design img {
+		height: 350px;
+		width: 250px;
+		margin-top: 100px;
+	}
 
-    .servicetext {
-        font-size: 16px
-    }
+	.servicetext {
+		font-size: 16px
+	}
 
-    #logo{
-        font-size: 190%;
-    }
+	#logo {
+		font-size: 190%;
+	}
 
-    .menu {
-      font-size: 90%;
-    }
+	.menu {
+		font-size: 90%;
+	}
 
-    #slogan {
-        position: absolute;
-        top: 400px;
-        left: 15%;
-    }
+	#slogan {
+		position: absolute;
+		top: 400px;
+		left: 15%;
+	}
 
-    #design-message {
-        top: 60%;
-    }
-    fieldset {
-        width: 60%;
-        margin: 5% 20%;
-        margin-top: 5%;
-    }
+	#design-message {
+		top: 60%;
+	}
 
-    .first-name,
-    .email {
-        width: 42%;
-        height: 25px;
-        margin: 10px 10px 10px 20px;
-        color: #013328;
-        background: transparent;
-        border: 2px solid #013328;
-        display: block;
-        float: left;
-    
-    }
-    
-    .surname,
-    .mobile-number {
-        width: 42%;
-        height: 25px;
-        margin: 10px 10px;
-        color: #013328;
-        background: transparent;
-        border: 2px solid #013328;
-        display: block;
-        float: right;
-    }
+	fieldset {
+		width: 60%;
+		margin: 5% 20%;
+		margin-top: 5%;
+	}
 
-    footer {
-        padding: 20px;
-    }
+	.first-name,
+	.email {
+		width: 42%;
+		height: 25px;
+		margin: 10px 10px 10px 20px;
+		color: #013328;
+		background: transparent;
+		border: 2px solid #013328;
+		display: block;
+		float: left;
 
-    .social-networks {
-    bottom: 10px;
-    }
+	}
+
+	.surname,
+	.mobile-number {
+		width: 42%;
+		height: 25px;
+		margin: 10px 10px;
+		color: #013328;
+		background: transparent;
+		border: 2px solid #013328;
+		display: block;
+		float: right;
+	}
+
+	footer {
+		padding: 20px;
+	}
+
+	.social-networks {
+		bottom: 10px;
+	}
 }
 
 /* TABLET VIEW - 768 px*/
 @media only screen and (max-width: 768px) and (min-width: 700px) {
 
-    .section1,
-    .section2,
-    .section3 {
-        flex-direction: column;
-    }
+	.section1,
+	.section2,
+	.section3 {
+		flex-direction: column;
+	}
 
-    .design img {
-        height: 350px;
-        width: 250px;
-        margin-top: 100px;
-    }
+	.design img {
+		height: 350px;
+		width: 250px;
+		margin-top: 100px;
+	}
 
-    .servicetext {
-        font-size: 16px
-    }
+	.servicetext {
+		font-size: 16px
+	}
 
-    .design:last-child {
-        display: none;
-    }
+	.design:last-child {
+		display: none;
+	}
 
-    header {
-    height: 10vh;
-    }
+	header {
+		height: 10vh;
+	}
 
-    #logo {
-        position: absolute;
-        left: 10px;
-        top: 15px;
-        font-size: 35px;
-        }
+	#logo {
+		position: absolute;
+		left: 10px;
+		top: 15px;
+		font-size: 35px;
+	}
 
-    fieldset {
-        margin-left: 10%;
-        width: 80%;
-        margin-top: 5%;
-        margin-right: 0;
-    }
+	fieldset {
+		margin-left: 10%;
+		width: 80%;
+		margin-top: 5%;
+		margin-right: 0;
+	}
 
-    .first-name,
-    .email,
-    .surname,
-    .mobile-number {
-        width: 40%;
-        display: block;
-        float: none;
-        justify-content: center;
-        margin: 20px;
-    }
+	.first-name,
+	.email,
+	.surname,
+	.mobile-number {
+		width: 40%;
+		display: block;
+		float: none;
+		justify-content: center;
+		margin: 20px;
+	}
 
-    /*Video*/
+	/*Video*/
 
-    .videosize {
-    width: 360px;
-    height: 215px;
-    }
+	.videosize {
+		width: 360px;
+		height: 215px;
+	}
 
-        /*NAVBAR - code from here: https://dev.to/ljcdev/hamburger-css-no-js-2dfa*/
-        .hamburger {
-            display: flex;
-            border: none;
-            position: absolute;
-            top: 35px;
-            left: 680px;
-            font-size: 30px;
-            color: #013328;  
-            text-decoration: none; 
-          }
-                
-          .xmark {
-            z-index: 900;
-            display: flex;
-            border: none;
-            position: absolute;
-            top: 70px;
-            left: 300px;
-            font-size: 30px;
-            background: #013328;
-            color: #eed9c4;
-            text-decoration: none;
+	/*NAVBAR - code from here: https://dev.to/ljcdev/hamburger-css-no-js-2dfa*/
+	.hamburger {
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 35px;
+		left: 680px;
+		font-size: 30px;
+		color: #013328;
+		text-decoration: none;
+	}
 
-          }
-          
-          .navbar {
-            position: absolute;
-            z-index: 1000;
-            top: 0;
-            left: 50%;
-            width: 50%;
-            height: 100vh;
-            overflow: hidden;
-            /* basic menu styling*/
-            list-style: none;
-            background: #013328;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-evenly;
-            align-items: center;
-            /* animate slide up/down */
-            transform: translateY(-100%);
-            transition: transform 0.2s ease;
-          }
-          
-          .navbar:target {
-            /* show navbar */
-            transform: translateY(0);
-          }
-          
-          .active1, .active2, .active3 {
-            display: block;
-            font-family: "EB Garamond", serif;
-            color: #eed9c4;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-decoration: none;
-            padding-bottom: 0.5rem;
-          }
-          
-          #slogan {
-          font-size: 20px;
-          top: 450px;
-          }
+	.xmark {
+		z-index: 900;
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 70px;
+		left: 300px;
+		font-size: 30px;
+		background: #013328;
+		color: #eed9c4;
+		text-decoration: none;
 
-          #design-message {
-           top: 40%;
-           padding: 40px 40px;
-          }
+	}
 
-          footer {
-            padding: 20px;
-          }
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
 
-          #videowrapper {
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center
-            }
-        
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
+
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
+
+	#slogan {
+		font-size: 20px;
+		top: 450px;
+	}
+
+	#design-message {
+		top: 40%;
+		padding: 40px 40px;
+	}
+
+	footer {
+		padding: 20px;
+	}
+
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
 }
 
 @media only screen and (max-width: 700px) and (min-width: 540px) {
 
-    #logo {
-        font-size: 30px;
-    }
+	#logo {
+		font-size: 30px;
+	}
 
-    .hamburger {
-        display: flex;
-        border: none;
-        position: absolute;
-        top: 35px;
-        right: 40px;
-        font-size: 30px;
-        color: #013328;  
-        text-decoration: none; 
-      }
-            
-      .xmark {
-        z-index: 900;
-        display: flex;
-        border: none;
-        position: absolute;
-        top: 70px;
-        left: 200px;
-        font-size: 30px;
-        background: #013328;
-        color: #eed9c4;
-        text-decoration: none;
-      }
-      
-      .navbar {
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 50%;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
-        /* basic menu styling*/
-        list-style: none;
-        background: #013328;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        /* animate slide up/down */
-        transform: translateY(-100%);
-        transition: transform 0.2s ease;
-      }
-      
-      .navbar:target {
-        /* show navbar */
-        transform: translateY(0);
-      }
-      
-      .active1, .active2, .active3 {
-        display: block;
-        font-family: "EB Garamond", serif;
-        color: #eed9c4;
-        font-weight: bold;
-        font-size: 1.2rem;
-        text-decoration: none;
-        padding-bottom: 0.5rem;
+	.hamburger {
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 35px;
+		right: 40px;
+		font-size: 30px;
+		color: #013328;
+		text-decoration: none;
+	}
 
-      }
-      #videowrapper {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center
-        }
+	.xmark {
+		z-index: 900;
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 70px;
+		left: 200px;
+		font-size: 30px;
+		background: #013328;
+		color: #eed9c4;
+		text-decoration: none;
+	}
 
-    /*service page*/
-    .design:last-child {
-        display: none;
-    }
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
 
-    .design img {
-        height: 400px;
-        width: 300px;
-    }
-    .servicetext {
-        font-size: 16px;
-    }
-    /*contacts*/
-    .mobile-number, .surname {
-        display: none;
-        }
-    .first-name, .email, .natureofenquiry, .yourenquiry {
-        width: 90%;
-        }
-    .natureofenquiry{
-        margin-left: 20px;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
+
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+
+	}
+
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	/*service page*/
+	.design:last-child {
+		display: none;
+	}
+
+	.design img {
+		height: 400px;
+		width: 300px;
+	}
+
+	.servicetext {
+		font-size: 16px;
+	}
+
+	/*contacts*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
+
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	.natureofenquiry {
+		margin-left: 20px;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
 }
-
 
 
 /* Surface Duo 540px*/
 @media only screen and (max-width: 540px) and (min-width: 430px) {
-    #logo {
-    line-height: 40px;
-    font-size: 20px;
-    }
-    header {
-    height: 15vh;
-    }
-    .hamburger {
-    display: flex;
-    border: none;
-    position: absolute;
-    top: 45px;
-    left: 420px;
-    font-size: 20px;
-    color: #013328;  
-    text-decoration: none; 
-    }
+	#logo {
+		line-height: 40px;
+		font-size: 20px;
+	}
 
-    .xmark {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    left: 150px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #eed9c4;
-    }
+	header {
+		height: 15vh;
+	}
 
-    .navbar {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden;
-    /* basic menu styling*/
-    list-style: none;
-    background: #013328;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    /* animate slide up/down */
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-    }
+	.hamburger {
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 45px;
+		left: 420px;
+		font-size: 20px;
+		color: #013328;
+		text-decoration: none;
+	}
 
-    .navbar:target {
-    /* show navbar */
-    transform: translateY(0);
-    }
-    .active1, .active2, .active3 {
-    display: block;
-    font-family: "EB Garamond", serif;
-    color: #eed9c4;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-    }
+	.xmark {
+		display: flex;
+		position: absolute;
+		top: 30px;
+		left: 150px;
+		font-size: 30px;
+		text-decoration: none;
+		color: #eed9c4;
+	}
 
-    #videowrapper {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center
-    }
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
 
-    .videosize {
-    width: 250px;
-    height: 200px;
-    }
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
 
-    .copyright {
-    display: none;
-    }
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
 
-    /*service page*/
-    .design:last-child {
-    display: none;
-    }
-    
-    .design img {
-    height: 400px;
-    width: 300px;
-    }
-    .servicetext {
-    font-size: 16px;
-    }
-   /*contacts*/
-    .mobile-number, .surname {
-    display: none;
-    }
-    .first-name, .email, .natureofenquiry, .yourenquiry {
-    width: 90%;
-    }
-    .natureofenquiry{
-    margin-left: 20px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-    fieldset {
-    width: 70%;
-    margin: 5% 15%;
-}
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	.videosize {
+		width: 250px;
+		height: 200px;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	/*service page*/
+	.design:last-child {
+		display: none;
+	}
+
+	.design img {
+		height: 400px;
+		width: 300px;
+	}
+
+	.servicetext {
+		font-size: 16px;
+	}
+
+	/*contacts*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
+
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	.natureofenquiry {
+		margin-left: 20px;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+
+	fieldset {
+		width: 70%;
+		margin: 5% 15%;
+	}
 }
 
 
 /*IPHONE 15 PRO MAX*/
 @media only screen and (max-width: 430px) and (min-width: 390px) {
 
-    header {
-        flex-direction: row;
-        height: 10vh;
-    }
-  
-    #videowrapper {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center
-    }
+	header {
+		flex-direction: row;
+		height: 10vh;
+	}
 
-    #videointro {
-        font-size: medium;
-    }
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
 
-    #logo {
-        float: left;
-        font-size: 25px;
-        line-height: 50px;
-        top: 15px;
-    }
+	#videointro {
+		font-size: medium;
+	}
 
-    #design-message {
-    width: 80%;
-    font-size: small;
-    }
+	#logo {
+		float: left;
+		font-size: 25px;
+		line-height: 50px;
+		top: 15px;
+	}
 
-    #slogan {
-    position: absolute;
-    font-size: large;
-    text-align: center;
-    left: 1%;
-    }
+	#design-message {
+		width: 80%;
+		font-size: small;
+	}
 
-    /*NAVBAR*/  
-    .hamburger {
-        display: flex;
-        border: none;
-        position: absolute;
-        top: 30px;
-        left: 370px;
-        font-size: 20px;
-        color: #013328;  
-        text-decoration: none; 
-      }
-            
-      .xmark {
-      display: flex;
-      border: none;
-        position: absolute;
-        top: 60px;
-        left: 150px;
-        font-size: 30px;
-        background: #013328; 
-        color: #eed9c4;
-        text-decoration: none;
+	#slogan {
+		position: absolute;
+		font-size: large;
+		text-align: center;
+		left: 1%;
+	}
 
-      }
-      
-      .navbar {
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 50%;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
-        /* basic menu styling*/
-        list-style: none;
-        background: #013328;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        /* animate slide up/down */
-        transform: translateY(-100%);
-        transition: transform 0.2s ease;
-      }
-      
-      .navbar:target {
-        /* show navbar */
-        transform: translateY(0);
-      }
-      
-      .active1, .active2, .active3 {
-        display: block;
-        font-family: "EB Garamond", serif;
-        color: #eed9c4;
-        font-weight: bold;
-        font-size: 1.2rem;
-        text-decoration: none;
-        padding-bottom: 0.5rem;
-      }
+	/*NAVBAR*/
+	.hamburger {
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 30px;
+		left: 370px;
+		font-size: 20px;
+		color: #013328;
+		text-decoration: none;
+	}
 
-      /*Mobile contact form*/
-      .mobile-number, .surname {
-        display: none;
-      }
-      .first-name, .email, .natureofenquiry, .yourenquiry {
-        width: 90%;
-      }
+	.xmark {
+		display: flex;
+		border: none;
+		position: absolute;
+		top: 60px;
+		left: 150px;
+		font-size: 30px;
+		background: #013328;
+		color: #eed9c4;
+		text-decoration: none;
 
-      .email {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      .natureofenquiry {
-        margin: 0 20px;
-        margin-bottom: 20px;
-      }
-      .yourenquiry {
-        margin-top: 0;
-      }
- 
-      .social-networks {
-        font-size: small;
-        bottom: 15px;  
-      }
-      .copyright {
-        font-size: 10px;
-        }
+	}
 
-    /*services page*/
-    .section1,
-    .section2,
-    .section3 {
-        flex-direction: column;
-    }
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
 
-    .design img {
-        height: 350px;
-        width: 250px;
-        margin-top: 100px;
-    }
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
 
-    .servicetext {
-        font-size: 16px
-    }
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
 
-    .design:last-child {
-        display: none;
-    }
+	/*Mobile contact form*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
 
-    fieldset {
-    width: 300px;
-    margin: 5% 13%;
-    }
-    .natureofenquiry {
-    margin-bottom: 10px;
-    }
-    .email {
-    margin-top: 0px;
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	.email {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.natureofenquiry {
+		margin: 0 20px;
+		margin-bottom: 20px;
+	}
+
+	.yourenquiry {
+		margin-top: 0;
+	}
+
+	.social-networks {
+		font-size: small;
+		bottom: 15px;
+	}
+
+	.copyright {
+		font-size: 10px;
+	}
+
+	/*services page*/
+	.section1,
+	.section2,
+	.section3 {
+		flex-direction: column;
+	}
+
+	.design img {
+		height: 350px;
+		width: 250px;
+		margin-top: 100px;
+	}
+
+	.servicetext {
+		font-size: 16px
+	}
+
+	.design:last-child {
+		display: none;
+	}
+
+	fieldset {
+		width: 300px;
+		margin: 5% 13%;
+	}
+
+	.natureofenquiry {
+		margin-bottom: 10px;
+	}
+
+	.email {
+		margin-top: 0px;
+	}
 }
-}
+
 /*MOBILE- 390 px*/
 
 @media only screen and (max-width: 390px) and (min-width: 320px) {
 
-/*Services page*/
-   .section1,
-   .section2,
-   .section3 {
-        flex-direction: column;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
+	/*Services page*/
+	.section1,
+	.section2,
+	.section3 {
+		flex-direction: column;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
 
-    .design img {
-        flex: none;
-        height: 350px;
-        width: 250px;
-    }
+	.design img {
+		flex: none;
+		height: 350px;
+		width: 250px;
+	}
 
-    .servicetext {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 15px;
-    }
+	.servicetext {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 15px;
+	}
 
-    .design:last-child {
-        display: none;
-    }
-/*homepage*/
+	.design:last-child {
+		display: none;
+	}
 
-    header {
-        height: 10vh;
-    }
+	/*homepage*/
 
-    #logo {
-        position: absolute;
-        left: 4px;
-        top: 15px;
-        font-size: 20px;
-        line-height: 40px;
-    }
+	header {
+		height: 10vh;
+	}
 
-    #slogan {
-        position: absolute;
-        font-size: large;
-        text-align: center;
-        left: 1%;   
-    }
+	#logo {
+		position: absolute;
+		left: 4px;
+		top: 15px;
+		font-size: 20px;
+		line-height: 40px;
+	}
 
-    /*video*/
+	#slogan {
+		position: absolute;
+		font-size: large;
+		text-align: center;
+		left: 1%;
+	}
 
-    #videowrapper {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center
-        }
-    
-        #videointro {
-            font-size: x-large;
-        }
-        .videosize {
-        width:360px;
-        height:215px;
-        }
-    /*contact*/
-    fieldset {
-        margin-left: 5%;
-        margin-top: 10%;
-        width: 80%;
-        margin: 5% 10%;
-    }
+	/*video*/
 
-    .first-name,
-    .email,
-    .surname,
-    .mobile-number {
-        width: 50%;
-        display: block;
-        float: none;
-        justify-content: center;
-        margin: 20px;
-    }
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
 
-    .email {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      .natureofenquiry {
-        margin: 0 20px;
-        margin-bottom: 20px;
-      }
-      .yourenquiry {
-        margin-top: 0;
-      }
+	#videointro {
+		font-size: x-large;
+	}
 
-    #design-message {
-        padding: 10px;
-        font-size: 13px;
-    }
-    
-  /*Mobile contact form*/
-          .mobile-number, .surname {
-            display: none;
-          }
-          .first-name, .email, .natureofenquiry, .yourenquiry {
-            width: 90%;
-          }
-    
-        /*navbar*/
+	.videosize {
+		width: 360px;
+		height: 215px;
+	}
 
-          .hamburger {
-            position: absolute;
-            top: 15px;
-            left: 295px;
-            padding: 10px;
-            color: #013328;
-            display: flex;
-            text-decoration: none;
-            font-size: 22px;
-          }
-          
-          .xmark {
-            position: absolute;
-            top: 20px;
-            left: 100px;
-            background: #013328;
-            color: #eed9c4;
-            display: flex;
-          }
-          
-          .navbar {
-            position: absolute;
-            z-index: 1000;
-            top: 0;
-            left: 50%;
-            width: 50%;
-            height: 100vh;
-            overflow: hidden;
-            /* basic menu styling*/
-            list-style: none;
-            background: #013328;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-evenly;
-            align-items: center;
-            /* animate slide up/down */
-            transform: translateY(-100%);
-            transition: transform 0.2s ease;
-          }
-          
-          .navbar:target {
-            /* show navbar */
-            transform: translateY(0);
-          }
-          
-          .active1, .active2, .active3 {
-            display: block;
-            font-family: "EB Garamond", serif;
-            color: #eed9c4;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-decoration: none;
-            padding-bottom: 0.5rem;
-          }
-          
+	/*contact*/
+	fieldset {
+		margin-left: 5%;
+		margin-top: 10%;
+		width: 80%;
+		margin: 5% 10%;
+	}
 
-          .copyright {
-            font-size: small;
-          }
+	.first-name,
+	.email,
+	.surname,
+	.mobile-number {
+		width: 50%;
+		display: block;
+		float: none;
+		justify-content: center;
+		margin: 20px;
+	}
 
-          fieldset {
-          margin-right: 0;
-          }
- 
-          .social-networks {
-            font-size: small;
-          }
-          .copyright {
-            display: none;
-            }
+	.email {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
-           .gallery {
-            width: 300px;
-            height: 450px;
-            }
-        }
+	.natureofenquiry {
+		margin: 0 20px;
+		margin-bottom: 20px;
+	}
 
+	.yourenquiry {
+		margin-top: 0;
+	}
+
+	#design-message {
+		padding: 10px;
+		font-size: 13px;
+	}
+
+	/*Mobile contact form*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
+
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	/*navbar*/
+
+	.hamburger {
+		position: absolute;
+		top: 15px;
+		left: 295px;
+		padding: 10px;
+		color: #013328;
+		display: flex;
+		text-decoration: none;
+		font-size: 22px;
+	}
+
+	.xmark {
+		position: absolute;
+		top: 20px;
+		left: 100px;
+		background: #013328;
+		color: #eed9c4;
+		display: flex;
+	}
+
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
+
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
+
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
+
+
+	.copyright {
+		font-size: small;
+	}
+
+	fieldset {
+		margin-right: 0;
+	}
+
+	.social-networks {
+		font-size: small;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.gallery {
+		width: 300px;
+		height: 450px;
+	}
+}
 
 
 /*MOBILE- 320 px*/
 
 @media only screen and (max-width: 320px) and (min-width: 280px) {
 
-/*Projects page*/
-    .gallery {
-    width: 250px;
-    height: 400px;
-    }
-/*footer*/
+	/*Projects page*/
+	.gallery {
+		width: 250px;
+		height: 400px;
+	}
 
-.social-networks {
-font-size: x-small;
-left: 10px;      
-        }
-/*Header*/
+	/*footer*/
 
-header {
-height: 15vh;
-}
+	.social-networks {
+		font-size: x-small;
+		left: 10px;
+	}
 
-#logo {
-    position: absolute;
-    line-height: 40px;
-    font-size: 20px;
-    top: 25px;
-}
+	/*Header*/
 
-#slogan {
-left: 10px;
-right: 10px;
-font-size: 20px;
-}
+	header {
+		height: 15vh;
+	}
 
-.hamburger {
-    display: flex;
-    position: absolute;
-    top: 26px;
-    left: 270px;
-    font-size: 20px;
-    padding: 10px;
-    color: #013328;
-    text-decoration: none;
-  }
- .xmark {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    font-size: 15px;
-    background: #013328;
-    color: #eed9c4;
-    text-decoration: none;
-   
- }
+	.p2 {
+		display: none;
+	}
 
- .navbar {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden;
-    /* basic menu styling*/
-    list-style: none;
-    background: #013328;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    /* animate slide up/down */
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-  }
-  
-  .navbar:target {
-    /* show navbar */
-    transform: translateY(0);
-  }
-  .active1, .active2, .active3 {
-    display: block;
-    font-family: "EB Garamond", serif;
-    color: #eed9c4;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-  }
+	#logo {
+		position: absolute;
+		line-height: 40px;
+		font-size: 20px;
+		top: 25px;
+	}
 
-li a {
-font-size: 16px;
-}
+	#slogan {
+		left: 10px;
+		right: 10px;
+		font-size: 20px;
+	}
 
-.design-message {
-padding:10px;
-font-size: 13px;
-}
+	.hamburger {
+		display: flex;
+		position: absolute;
+		top: 26px;
+		left: 270px;
+		font-size: 20px;
+		padding: 10px;
+		color: #013328;
+		text-decoration: none;
+	}
 
-/*video*/
-#videowrapper {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center
-    }
+	.xmark {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		left: 100px;
+		font-size: 15px;
+		background: #013328;
+		color: #eed9c4;
+		text-decoration: none;
 
-    #videointro {
-        font-size: x-large;
-    }
-    .videosize {
-    width:260px;
-    height:160px;
-    }
+	}
 
-fieldset {
-    margin-right: 0;
-    }
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
 
-    footer {
-    padding: 10px;
-    }
-    .copyright {
-    display: none;
-    }
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
 
-            /*Services page*/
-   .section1,
-   .section2,
-   .section3 {
-        flex-direction: column;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
 
-    .design img {
-        flex: none;
-        height: 350px;
-        width: 250px;
-    }
-    .servicetext {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 15px;
-    }
-    .design:last-child {
-        display: none;
-    }
+	li a {
+		font-size: 16px;
+	}
 
-    /*contacts*/
-    .mobile-number, .surname {
-        display: none;
-      }
-    .first-name, .email, .natureofenquiry, .yourenquiry {
-        width: 90%;
-      }
-    fieldset {
-        display: inline-block;
-        width: 80%;
-        margin: 5% 10%;
+	.design-message {
+		padding: 10px;
+		font-size: 13px;
+	}
 
+	/*video*/
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	#videointro {
+		font-size: x-large;
+	}
+
+	.videosize {
+		width: 260px;
+		height: 160px;
+	}
+
+	fieldset {
+		margin-right: 0;
+	}
+
+	footer {
+		padding: 10px;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	/*Services page*/
+	.section1,
+	.section2,
+	.section3 {
+		flex-direction: column;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.design img {
+		flex: none;
+		height: 350px;
+		width: 250px;
+	}
+
+	.servicetext {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.design:last-child {
+		display: none;
+	}
+
+	/*contacts*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
+
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	fieldset {
+		display: inline-block;
+		width: 80%;
+		margin: 5% 10%;
+
+	}
 }
 
 /*MOBILE- 280 px Galaxy Fold*/
 
 @media only screen and (max-width: 280px) and (min-width: 200px) {
 
-    /*Projects page*/
-        .gallery {
-        width: 250px;
-        height: 400px;
-        }
-    /*footer*/
-    
-    .social-networks {
-    font-size: x-small;
-    left: 10px;      
-            }
-    /*Header*/
-    
-    header {
-    height: 15vh;
-    }
-    
-    #logo {
-    position: absolute;
-    line-height: 30px;
-    font-size: 20px;
-    top: 1px;
-    padding: 20px;
-    }
-    
-    #slogan {
-    left: 10px;
-    right: 10px;
-    font-size: 20px;
-    }
-    
-    .hamburger {
-        display: flex;
-        position: absolute;
-        top: 26px;
-        left: 200px;
-        font-size: 20px;
-        padding: 10px;
-        color: #013328;
-        text-decoration: none;
-      }
-     .xmark {
-        display: flex;
-        position: absolute;
-        top: 20px;
-        left: 100px;
-        font-size: 15px;
-        background: #013328;
-        color: #eed9c4;
-        text-decoration: none;
-       
-     }
-    
-     .navbar {
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 50%;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
-        /* basic menu styling*/
-        list-style: none;
-        background: #013328;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        /* animate slide up/down */
-        transform: translateY(-100%);
-        transition: transform 0.2s ease;
-      }
-      .navbar:target {
-        /* show navbar */
-        transform: translateY(0);
-      }
-    li a {
-    font-size: 16px;
-    }
+	/*Projects page*/
+	.gallery {
+		width: 250px;
+		height: 400px;
+	}
 
-    .active1, .active2, .active3 {
-        display: block;
-        font-family: "EB Garamond", serif;
-        color: #eed9c4;
-        font-weight: bold;
-        font-size: 1.2rem;
-        text-decoration: none;
-        padding-bottom: 0.5rem;
-      }
-    
-    .design-message {
-    padding:10px;
-    font-size: 13px;
-    }
-    
-    /*video*/
-    #videowrapper {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center
-        }
-    
-        #videointro {
-            font-size: x-large;
-        }
-        .videosize {
-        width:260px;
-        height:160px;
-        }
-    
-        /*Services page*/
-   .section1,
-   .section2,
-   .section3 {
-        flex-direction: column;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
+	/*footer*/
 
-    .design img {
-        flex: none;
-        height: 350px;
-        width: 250px;
-    }
+	.social-networks {
+		font-size: x-small;
+		left: 10px;
+	}
 
-    .servicetext {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 15px;
-    }
-    .design:last-child {
-        display: none;
-    }
+	/*Header*/
 
-      /*Mobile contact form*/
-  .mobile-number, .surname {
-    display: none;
-  }
-  .first-name, .email, .natureofenquiry, .yourenquiry {
-    width: 90%;
-  }
-  fieldset {
-    display: inline-block;
-    width: 90%;
-    margin: 2%;
-  }
-    footer {
-    padding: 10px;
-    }
-    .copyright {
-    display: none;
-    }
+	header {
+		height: 15vh;
+	}
 
-    .design:last-child {
-        display: none;
-    }
-    
-}
+	#logo {
+		position: absolute;
+		line-height: 30px;
+		font-size: 20px;
+		top: 1px;
+		padding: 20px;
+	}
+
+	#slogan {
+		left: 10px;
+		right: 10px;
+		font-size: 20px;
+	}
+
+	.hamburger {
+		display: flex;
+		position: absolute;
+		top: 26px;
+		left: 200px;
+		font-size: 20px;
+		padding: 10px;
+		color: #013328;
+		text-decoration: none;
+	}
+
+	.xmark {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		left: 100px;
+		font-size: 15px;
+		background: #013328;
+		color: #eed9c4;
+		text-decoration: none;
+	}
+
+	.navbar {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+		/* basic menu styling*/
+		list-style: none;
+		background: #013328;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		/* animate slide up/down */
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
+
+	.navbar:target {
+		/* show navbar */
+		transform: translateY(0);
+	}
+
+	li a {
+		font-size: 16px;
+	}
+
+	.active1,
+	.active2,
+	.active3 {
+		display: block;
+		font-family: "EB Garamond", serif;
+		color: #eed9c4;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-decoration: none;
+		padding-bottom: 0.5rem;
+	}
+
+	.design-message {
+		padding: 10px;
+		font-size: small;
+	}
+
+	.p2 {
+		display: none;
+	}
+
+	/*video*/
+	#videowrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	#videointro {
+		font-size: x-large;
+	}
+
+	.videosize {
+		width: 260px;
+		height: 160px;
+	}
+
+	/*Services page*/
+	.section1,
+	.section2,
+	.section3 {
+		flex-direction: column;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.design img {
+		flex: none;
+		height: 350px;
+		width: 250px;
+	}
+
+	.servicetext {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.design:last-child {
+		display: none;
+	}
+
+	/*Mobile contact form*/
+	.mobile-number,
+	.surname {
+		display: none;
+	}
+
+	.first-name,
+	.email,
+	.natureofenquiry,
+	.yourenquiry {
+		width: 90%;
+	}
+
+	fieldset {
+		display: inline-block;
+		width: 90%;
+		margin: 2%;
+	}
+
+	footer {
+		padding: 10px;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.design:last-child {
+		display: none;
+	}
+
 }
